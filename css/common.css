@@ -75,7 +75,7 @@ body {
     width: 10%;
 }
 
-.nav_list ul {
+.pc_nav ul {
     display: flex;
     column-gap: 60px;
 }

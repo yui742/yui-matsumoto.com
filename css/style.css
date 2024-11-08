@@ -425,3 +425,8 @@ textarea {
 .contact_button img {
     width: 101px;
 }
+
+@media screen and (max-width: 1100px) {
+    .pc_nav {
+    }
+}
