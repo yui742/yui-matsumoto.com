@@ -1,0 +1,146 @@
+@charset "utf-8";
+
+/* profileセクション */
+.profile {
+    max-width: 1366px;
+}
+
+.profile_inner {
+    position: relative;
+    height: 841px;
+    display: flex;
+    padding-top: 8%;
+}
+
+.profile_shape {
+    position: absolute;
+    left: 11%;
+    width: 100%;
+}
+
+.profile_title {
+    position: absolute;
+    top: 13%;
+    left: 5%;
+    width: 8%;
+    background-color: transparent;
+}
+
+.profile_content {
+    /* position: absolute;
+    top: 13%;
+    left: 20%; */
+    padding-top: 1%;
+    margin: 0 auto;
+    width: 60%;
+    text-align: center;
+}
+
+.profile_name {
+    padding-top: 10px;
+    font-size: 36px;
+    background-color: transparent;
+}
+
+.profile_text {
+    font-size: 24px;
+    text-align: left;
+    background-color: transparent;
+}
+
+/* strangeセクション  */
+.strange {
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.strange_inner {
+    position: relative;
+    padding-top: 21%;
+    /* height: 2037px; */
+    height: 2131px;
+}
+
+.strange_shape01 {
+    position: absolute;
+    top: -9%;
+}
+.strange_shape02 {
+    position: absolute;
+    left: 61%;
+}
+
+.strange_title {
+    position: relative;
+    /* left: 30%;
+    top: 15%; */
+    padding-top: 2%;
+    width: 531px;
+    margin: 0 auto;
+    background-color: transparent;
+}
+
+.strange_content_text {
+    background-color: transparent;
+    font-size: 18px;
+    text-align: justify;
+}
+
+.strange_content_title {
+    background-color: transparent;
+    font-size: 48px;
+}
+
+.strange_content01 {
+    position: relative;
+    top: 2%;
+    left: 6%;
+    width: 100%;
+}
+
+.strange_content01_inner {
+    position: absolute;
+    top: 30%;
+    left: 34%;
+    width: 42%;
+}
+
+.strange_shape03 {
+    position: absolute;
+    left: 26%;
+    top: 51%;
+}
+
+.strange_content02 {
+    position: absolute;
+    top: 45%;
+    left: 54%;
+    width: 95%;
+}
+
+.strange_content02_inner {
+    position: absolute;
+    top: 30%;
+    left: -38%;
+    width: 42%;
+}
+
+.strange_shape04 {
+    position: absolute;
+    top: 71%;
+    left: 59%;
+}
+
+.strange_content03 {
+    position: absolute;
+    top: 69%;
+    left: 3%;
+    width: 100%;
+}
+
+.strange_content03_inner {
+    position: absolute;
+    top: 80%;
+    left: 34%;
+    width: 47%;
+}

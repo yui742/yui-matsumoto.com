@@ -1,0 +1,427 @@
+@charset "utf-8";
+
+/* .inner {
+    max-width: 1366px;
+    margin: 0 auto;
+} */
+
+/* メインビジュアル */
+.mv {
+    position: relative;
+    max-height: calc(100vh - 105px);
+    margin-bottom: 72px;
+    overflow-y: hidden;
+}
+
+.mv_img {
+    /* position: relative; */
+    /* height: 100%; */
+    /* padding-top: 66%; */
+    /* background-image: url("../images/mv.jpg"); */
+    /* background-size: contain; */
+    /* background-repeat: no-repeat; */
+}
+
+.mv_img img {
+    width: 100%;
+}
+
+.mv_text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-53%, -50%);
+    background-color: transparent;
+    text-align: center;
+}
+
+.mv_text img {
+    max-width: 70vw;
+}
+
+/* aboutセクション */
+#about {
+    max-width: 1366px;
+    padding-top: 200px;
+}
+
+.about_inner {
+    display: flex;
+    position: relative;
+    padding-top: 35px;
+    /* background-image: url(../images/about_shape.png);
+    background-repeat: no-repeat;
+    background-position: 93% 272px; */
+}
+
+.about_title {
+    width: 100%;
+    padding-left: 4%;
+}
+
+.about_shape {
+    position: absolute;
+    /* top: px; */
+    left: 74%;
+    z-index: 1;
+    /* width: 28%; */
+    /* background-image: url(../images/about_shape.png); */
+    /* background-position: ; */
+    /* background-repeat: no-repeat; */
+}
+
+.about_content {
+    position: absolute;
+    top: 26%;
+    left: 27%;
+}
+
+.about_text {
+    background-color: transparent;
+    font-size: 20px;
+    line-height: 48px;
+    text-align: center;
+}
+
+.about_button_wrap {
+    padding-top: 15%;
+}
+
+.about_button {
+    display: flex;
+    align-items: center; /* 垂直方向の中央揃え */
+    justify-content: center; /* 水平方向の中央揃え */
+    position: relative;
+    width: 224px;
+    height: 60px;
+    margin: 0 auto;
+    border: none;
+    border-radius: 9999px;
+    background: #f46159;
+}
+
+.about_button::before {
+    position: absolute;
+    top: 43%;
+    right: 30px;
+    width: 6px;
+    height: 10px;
+    background-image: url(../images/icon_arrow_right.svg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    content: "";
+}
+
+.about_button img {
+    display: block;
+    width: 101px;
+    margin: 0 auto;
+}
+
+/* skillセクション */
+.skill {
+    position: relative;
+    max-width: 1366px;
+}
+
+.skill_inner {
+    position: relative;
+    height: 1332px;
+    margin: 0 auto;
+    padding-top: 14%;
+    /* background-image: url(../images/skill_shape02.svg),
+        url(../images/skill_shape01.svg); */
+    /* background-position: 0px 189px; */
+    /* background-size: contain; */
+    /* background-repeat: no-repeat; */
+}
+
+.skill_shape04 {
+    position: absolute;
+    top: -20%;
+    z-index: -1;
+    width: 100%;
+}
+
+.skill_shape01 {
+    position: absolute;
+    top: 7%;
+    left: 7%;
+    z-index: 1;
+    width: 15%;
+}
+
+.skill_shape02 {
+    position: absolute;
+    width: 90%;
+}
+
+.skill_title {
+    position: absolute;
+    top: 19%;
+    right: 5%;
+    width: 8%;
+}
+
+.skill_content_wrap {
+    display: flex;
+    gap: 9%;
+    position: relative;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-top: 190px;
+}
+
+.skill_content_wrap img {
+    width: 60%;
+}
+
+.design_content {
+    width: 40%;
+    text-align: center;
+}
+
+.coding_content {
+    width: 40%;
+    padding-top: 195px;
+    text-align: center;
+}
+
+.skill_content_wrap h3 {
+    padding-top: 15px;
+    background-color: transparent;
+    font-size: 36px;
+}
+
+.skill_text01 {
+    padding-top: 2px;
+    background-color: transparent;
+    font-size: 18px;
+    text-align: left;
+    text-align: justify;
+}
+
+.skill_text02 {
+    padding-top: 10px;
+    background-color: transparent;
+    text-align: center;
+    font-size: 20px;
+}
+
+.skill_tool {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 1行3列 */
+    gap: 14px;
+    justify-content: center;
+    padding-top: 8px;
+}
+
+.skill_tool p.tool_content,
+.small_skill_tool p.tool_content {
+    width: 130px;
+    height: 44px;
+    border-radius: 5px;
+    background-color: #f3e9cf;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.small_skill_tool {
+    display: flex;
+    justify-content: center;
+    gap: 14px;
+    padding-top: 8px;
+}
+
+.skill_shape03 {
+    position: absolute;
+    top: 80%;
+    right: 28%;
+    width: 8%;
+}
+
+/* worksセクション */
+.works {
+    max-width: 1366px;
+}
+
+.works_inner {
+    /* display: inline-block; */
+    position: relative;
+    height: 820px;
+    padding-top: 3%;
+}
+
+.works_title {
+    position: absolute;
+    left: 33%;
+    z-index: 1;
+    width: 452px;
+    background-color: transparent;
+}
+
+/* .works_shape01 {
+    position: absolute;
+    width: 100%;
+} */
+
+.works_shape01 {
+    position: absolute;
+    top: 15%;
+    left: 29%;
+    width: 13%;
+}
+
+.works_content_wrap {
+    /* display: flex; */
+    /* flex-wrap: wrap; */
+    position: absolute;
+    left: 133px;
+    z-index: 1;
+    /* width: 1100px; */
+    padding-top: 170px;
+    background-color: transparent;
+}
+
+.works_content_inner {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 7%;
+}
+
+.works_content {
+    margin-bottom: 90px;
+}
+
+.works_content_img {
+    width: 310px;
+}
+
+.works_text {
+    padding-top: 10px;
+    background-color: transparent;
+}
+
+.works_tool {
+    background-color: transparent;
+}
+
+.works_shape03 {
+    position: absolute;
+    top: 45%;
+    width: 100%;
+}
+
+/* 
+.works_shape02 {
+    position: absolute;
+    top: 98%;
+    left: 10%;
+    width: 17%;
+} */
+
+/* コンタクトセクション */
+.contact {
+    max-width: 1366px;
+    height: 1470px;
+    margin: 0 auto;
+}
+
+.contact_inner {
+    position: relative;
+    margin: 0 auto;
+}
+
+.contact_shape02 {
+    position: absolute;
+    /* top: 98%; */
+    left: 11%;
+    width: 16%;
+}
+
+.contact_shape {
+    position: absolute;
+    width: 100%;
+}
+
+.contact_title {
+    position: relative;
+    /* z-index: 1; */
+    width: 39%;
+    margin: 0 auto;
+    padding-top: 20%;
+    background-color: transparent;
+}
+
+.form_wrap {
+    position: relative;
+    width: 100%; /* 必要に応じて調整 */
+    max-width: 832px; /* 必要に応じて調整 */
+    margin: 0 auto;
+    padding-top: 3%;
+}
+
+label {
+    display: block;
+    font-size: 18px;
+}
+
+.form_inner {
+    padding-top: 39px;
+}
+
+.form_inner:first-child {
+    padding-top: 0px;
+}
+
+.contact_text {
+    padding-top: 13px;
+    background-color: transparent;
+    font-weight: bold;
+    font-size: 11px;
+}
+
+input[type="text1"] {
+    width: 832px;
+    height: 63px;
+    padding-left: 15px;
+    border: none;
+    border-radius: 8px;
+}
+
+input[type="text2"] {
+    width: 832px;
+    height: 63px;
+    padding-left: 15px;
+    border: none;
+    border-radius: 8px;
+}
+
+textarea {
+    width: 832px;
+    height: 323px;
+    padding: 25px 0px 0px 15px;
+    border: none;
+    border-radius: 12px;
+}
+
+.contact_button_wrap {
+    padding-top: 12%;
+}
+.contact_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 224px;
+    height: 60px;
+    margin: 0 auto;
+    border-radius: 9999px;
+    border: none;
+    background: #f46159;
+}
+
+.contact_button img {
+    width: 101px;
+}

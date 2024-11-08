@@ -1,0 +1,203 @@
+@charset "utf-8";
+
+/* cssリセット */
+
+/*利用するタグによってこちらの内容は増やす*/
+
+html,
+body,
+h1,
+h2,
+h3,
+p,
+dl,
+dt,
+dd,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    line-height: 2em;
+    /*デフォルトの文字色、font-familyを予め当てておく*/
+    color: #4f260b;
+    font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
+        "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
+    font-feature-settings: "palt";
+}
+
+a {
+    /*下線を消す*/
+    text-decoration: none;
+    /*色を消す*/
+    color: inherit;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.5;
+}
+
+ul {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+li {
+    /*左の「・」を消す*/
+    list-style: none;
+}
+
+img {
+    max-width: 100%;
+    vertical-align: bottom;
+    border: none;
+}
+
+body {
+    background-color: #f3e9cf;
+}
+
+/* ヘッダー */
+/* header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+} */
+
+.nav_list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 11% 25px 11%;
+}
+
+.nav_logo {
+    width: 10%;
+}
+
+.nav_list ul {
+    display: flex;
+    column-gap: 60px;
+}
+
+.li_about {
+    width: 66px;
+    /* width: 6%; */
+}
+
+.li_works {
+    width: 72px;
+    /* width: 7%; */
+}
+
+.li_contact {
+    width: 89px;
+    /* width: 8%; */
+    quotes: inherit;
+}
+.nav_list li:last-child {
+    padding-right: 0px;
+}
+
+/* mainセクション */
+.inner {
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+/* footerセクション */
+footer {
+    max-width: 1366px;
+    margin: 0 auto;
+}
+
+.footer_shape_wrap {
+    display: flex;
+    justify-content: flex-end;
+    position: relative;
+    z-index: 0;
+    height: 17px;
+}
+
+.footer_shape {
+    position: absolute;
+    top: -1920%;
+    left: 53%;
+    width: 12%;
+}
+
+.footer_shape02 {
+    position: absolute;
+    top: -65px;
+    /* right: 35%; */
+    width: 43%;
+}
+
+.footer_inner {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding-top: 1%;
+}
+
+.footer_button_wrap {
+    padding-top: 10%;
+}
+
+.footer_button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 20%;
+    height: 60px;
+    border: none;
+    border-radius: 30px;
+    background: #f46159;
+    text-align: center;
+}
+
+.footer_button::before {
+    position: absolute;
+    top: 41%;
+    left: 30px;
+    width: 6px;
+    height: 10px;
+    background-image: url(../images/icon_arrow_left.svg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    content: "";
+}
+
+.footer_button img {
+    width: 56%;
+}
+
+.footer_nav {
+    text-align: center;
+    padding-top: 4%;
+}
+
+.footer_nav ul {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+}
+
+.footer_copy {
+    text-align: center;
+    padding-top: 5%;
+}
+
+.footer_copy img {
+    width: 209px;
+}
+
+.top {
+    position: fixed;
+    right: 60px;
+    bottom: 20px;
+    z-index: 1;
+    width: 151px;
+    height: 151px;
+    padding: 10px 15px;
+}
