@@ -68,7 +68,7 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 25px 11% 25px 11%;
+    padding: 4% 11% 4% 11%;
 }
 
 .nav_logo {
@@ -222,8 +222,8 @@ footer {
         right: 0px;
         z-index: 2;
         place-items: center;
-        width: 170px;
-        height: 160px;
+        width: 122px;
+        height: 112px;
         border-bottom-left-radius: 18px;
         cursor: pointer;
         background-color: #321d0b;
