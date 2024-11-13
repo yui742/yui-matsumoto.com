@@ -25,12 +25,34 @@
                     <li class="li_contact"><a href="#contact"><img src="images/contact.png" alt="CONTACT"></a></li>
                 </ul>
             </nav>
+            <div class="sp_btn" id="sp_btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <script>
+                const sp_btn = document.querySelector('#sp_btn')
+                if (sp_btn) {
+                    sp_btn.addEventListener('click', () => {
+                        sp_btn.classList.toggle('is-active');
+                    })
+                }
+            </script>
+            <!-- <nav class="sp_nav">
+                <ul>
+                    <li class="li_about"><a href="#about"><img src="images/about.png" alt="ABOUT"></a></li>
+                    <li class="li_works"><a href="#works"><img src="images/works.png" alt="WORKS"></a></li>
+                    <li class="li_contact"><a href="#contact"><img src="images/contact.png" alt="CONTACT"></a></li>
+                </ul>
+            </nav> -->
         </div>
     </header>
     <!-- mvセクション -->
     <div class="mv">
         <div class="mv_img">
             <img src="images/mv.jpg" alt="メインビジュアル">
+        </div>
+        <div class="mv_sp_img"><img src="images/mv_sp.jpg" alt="mv_sp">
         </div>
         <h2 class="mv_text"><img src="images/mv_title.png" alt="mv_text"></h2>
     </div>
@@ -47,12 +69,11 @@
                             相手の地図で道を案内しなければ的外れな場所を案内してしまいます。<br>
                             お客様とエンドユーザーの悩みと要望、思考を理解し、<br>
                             情報に基づいた最適な道を提案したいです。
-                            こんにちはゆいです</p>
+                        </p>
                         <div class="about_button_wrap">
                             <a class="about_button" href="about/about.html"><img src="images/read_more.png"
                                     alt="read more">
-                                <!-- divではなくobject使ってる -->
-                                <object><a href="./about/index.html"></a></object>
+                                <!-- <a href="./about/index.html"></a> -->
                             </a>
                         </div>
                     </div>
@@ -149,11 +170,11 @@
                         <form>
                             <div class="form_inner">
                                 <label for="name">お名前</label>
-                                <input id="name" type="text1" name="name" placeholder="山田　太郎">
+                                <input id="name" type="text" name="name" placeholder="山田 太郎">
                             </div>
                             <div class="form_inner">
                                 <label for="email">メールアドレス</label>
-                                <input id="email" type="text2" name="name" placeholder="メールアドレスを入力してください">
+                                <input id="email" type="email" name="email" placeholder="メールアドレスを入力してください">
                             </div>
                             <div class="form_inner">
                                 <label for="msg">お問い合わせ内容</label>

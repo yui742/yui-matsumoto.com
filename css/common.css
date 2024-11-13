@@ -99,6 +99,10 @@ body {
     padding-right: 0px;
 }
 
+.sp_nav {
+    display: none;
+}
+
 /* mainセクション */
 .inner {
     max-width: 1366px;
@@ -200,4 +204,60 @@ footer {
     width: 151px;
     height: 151px;
     padding: 10px 15px;
+}
+
+@media screen and (max-width: 1100px) {
+    .pc_nav {
+        display: none;
+    }
+
+    /* ハンバーガーメニュー */
+    .sp_btn {
+        --opacity: 1;
+        --rotate: 0;
+        --translateY: 1.5rem;
+        display: grid;
+        position: absolute;
+        top: 0px;
+        right: 0px;
+        z-index: 2;
+        place-items: center;
+        width: 170px;
+        height: 160px;
+        border-bottom-left-radius: 18px;
+        cursor: pointer;
+        background-color: #321d0b;
+    }
+
+    /* .is-active クラスが追加されたときのスタイル */
+    .sp_btn.is-active {
+        --opacity: 0;
+        --rotate: 45deg;
+        --translateY: 0;
+    }
+
+    .sp_btn span {
+        display: block;
+        position: relative;
+        width: 100px;
+        height: 5px;
+        border-radius: 2px;
+        background-color: #f4ead0;
+        grid-area: 1 / 1 / -1 / -1;
+        transition: opacity 0.4s ease, rotate 0.4s ease, translate 0.4s ease;
+    }
+
+    .sp_btn span:nth-child(1) {
+        opacity: var(--opacity);
+    }
+
+    .sp_btn span:nth-child(2) {
+        translate: 0 var(--translateY);
+        rotate: var(--rotate);
+    }
+
+    .sp_btn span:nth-child(3) {
+        translate: 0 calc(var(--translateY) * -1);
+        rotate: calc(var(--rotate) * -1);
+    }
 }
