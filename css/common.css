@@ -75,9 +75,17 @@ body {
     width: 10%;
 }
 
+.nav_logo img {
+    display: block;
+}
+
 .pc_nav ul {
     display: flex;
     column-gap: 60px;
+}
+
+.pc_nav li img {
+    display: block;
 }
 
 .li_about {
@@ -229,7 +237,7 @@ footer {
         background-color: #321d0b;
     }
 
-    /* .is-active クラスが追加されたときのスタイル */
+    /* .is-activeクラスが追加されたときのスタイル */
     .sp_btn.is-active {
         --opacity: 0;
         --rotate: 45deg;
@@ -239,7 +247,7 @@ footer {
     .sp_btn span {
         display: block;
         position: relative;
-        width: 100px;
+        width: 64px;
         height: 5px;
         border-radius: 2px;
         background-color: #f4ead0;
@@ -259,5 +267,11 @@ footer {
     .sp_btn span:nth-child(3) {
         translate: 0 calc(var(--translateY) * -1);
         rotate: calc(var(--rotate) * -1);
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .sp_btn {
+        display: none;
     }
 }
