@@ -17,19 +17,26 @@ ul,
 li {
     margin: 0;
     padding: 0;
-    line-height: 2em;
     /*デフォルトの文字色、font-familyを予め当てておく*/
     color: #4f260b;
+    line-height: 2em;
     font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
         "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
     font-feature-settings: "palt";
+    --font-size18: 18px;
+    --font-size20: 20px;
+    --font-size48: 48px;
+}
+
+p {
+    text-align: justify;
 }
 
 a {
     /*下線を消す*/
+    color: inherit;
     text-decoration: none;
     /*色を消す*/
-    color: inherit;
     transition: 0.3s;
 }
 
@@ -49,34 +56,25 @@ li {
 
 img {
     max-width: 100%;
-    vertical-align: bottom;
     border: none;
+    vertical-align: bottom;
 }
 
 body {
     background-color: #f3e9cf;
 }
 
-/* ヘッダー */
-/* header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-} */
-
-.nav_list {
+.header_wrap {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 4% 11% 4% 11%;
-}
-
-.nav_logo {
-    width: 10%;
+    width: 78%;
+    padding: 4% 11%;
 }
 
 .nav_logo img {
     display: block;
+    width: 100%;
 }
 
 .pc_nav ul {
@@ -88,17 +86,17 @@ body {
     display: block;
 }
 
-.li_about {
+.li_about img {
     width: 66px;
     /* width: 6%; */
 }
 
-.li_works {
+.li_works img {
     width: 72px;
     /* width: 7%; */
 }
 
-.li_contact {
+.li_contact img {
     width: 89px;
     /* width: 8%; */
     quotes: inherit;
@@ -131,6 +129,14 @@ footer {
     height: 17px;
 }
 
+.footer_shape01 {
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 0;
+    /* width: 54%; */
+}
+
 .footer_shape {
     position: absolute;
     top: -1920%;
@@ -145,10 +151,19 @@ footer {
     width: 43%;
 }
 
+.footer_shape03 {
+    position: absolute;
+    bottom: 141px;
+    left: 20%;
+    width: 12%;
+}
+
 .footer_inner {
+    position: relative;
     max-width: 1100px;
     margin: 0 auto;
     padding-top: 1%;
+    z-index: 1;
 }
 
 .footer_button_wrap {
@@ -157,8 +172,8 @@ footer {
 
 .footer_button {
     display: flex;
-    align-items: center;
     justify-content: center;
+    align-items: center;
     position: relative;
     width: 20%;
     height: 60px;
@@ -196,8 +211,8 @@ footer {
 }
 
 .footer_copy {
+    padding: 5% 0 20px 0;
     text-align: center;
-    padding-top: 5%;
 }
 
 .footer_copy img {
@@ -225,16 +240,16 @@ footer {
         --rotate: 0;
         --translateY: 1.5rem;
         display: grid;
+        place-items: center;
         position: absolute;
         top: 0px;
         right: 0px;
         z-index: 2;
-        place-items: center;
         width: 122px;
-        height: 112px;
+        height: 118px;
         border-bottom-left-radius: 18px;
-        cursor: pointer;
         background-color: #321d0b;
+        cursor: pointer;
     }
 
     /* .is-activeクラスが追加されたときのスタイル */
@@ -273,5 +288,60 @@ footer {
 @media screen and (min-width: 1100px) {
     .sp_btn {
         display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .footer_shape01 {
+        display: none;
+    }
+
+    .footer_shape_sp {
+        position: absolute;
+        bottom: 0px;
+    }
+
+    .footer_shape03 {
+        display: none;
+    }
+
+    .footer_inner {
+        padding: 77% 88px 42px 88px;
+    }
+
+    .footer_button {
+        width: 55%;
+        height: 102px;
+        border-radius: 51px;
+    }
+
+    .footer_button img {
+        width: 61%;
+    }
+
+    .footer_button::before {
+        top: 39%;
+        width: 12px;
+        height: 20px;
+    }
+
+    .footer_nav {
+        padding-top: 10%;
+    }
+
+    .li_about img {
+        width: 86px;
+    }
+
+    .li_works img {
+        width: 94px;
+    }
+
+    .li_contact img {
+        width: 116px;
+    }
+
+    .footer_copy {
+        padding: 7% 0 20px 0;
     }
 }

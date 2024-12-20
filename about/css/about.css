@@ -3,144 +3,368 @@
 /* profileセクション */
 .profile {
     max-width: 1366px;
+    height: 841px;
+    padding-top: 102px;
 }
 
 .profile_inner {
-    position: relative;
-    height: 841px;
     display: flex;
-    padding-top: 8%;
+    position: relative;
 }
 
 .profile_shape {
     position: absolute;
-    left: 11%;
-    width: 100%;
+    top: 2px;
+    left: 12%;
+}
+
+.profile_shape img {
+    width: 17vw;
 }
 
 .profile_title {
     position: absolute;
-    top: 13%;
+    top: 0;
     left: 5%;
-    width: 8%;
-    background-color: transparent;
+}
+
+.profile_title img {
+    width: 9vw;
 }
 
 .profile_content {
-    /* position: absolute;
-    top: 13%;
-    left: 20%; */
-    padding-top: 1%;
+    width: 66%;
     margin: 0 auto;
-    width: 60%;
     text-align: center;
 }
 
+.profile_img {
+    margin-bottom: 28px;
+}
+
+.profile_img img {
+    width: 43vw;
+}
+
 .profile_name {
-    padding-top: 10px;
-    font-size: 36px;
-    background-color: transparent;
+    margin-bottom: 20px;
+    font-size: 35px;
+    line-height: 1;
+    text-align: center;
 }
 
 .profile_text {
     font-size: 24px;
+    margin: -12px 0;
+    line-height: 1.8em;
     text-align: left;
-    background-color: transparent;
+}
+
+.indent {
+    padding-left: 1em;
 }
 
 /* strangeセクション  */
 .strange {
     max-width: 1366px;
     margin: 0 auto;
+    padding-top: 295px;
 }
 
 .strange_inner {
     position: relative;
-    padding-top: 21%;
     /* height: 2037px; */
     height: 2131px;
 }
 
 .strange_shape01 {
     position: absolute;
-    top: -9%;
+    top: -25%;
+    z-index: -1;
 }
 .strange_shape02 {
     position: absolute;
-    left: 61%;
+    left: 60%;
+}
+
+.strange_shape02 img {
+    width: 15vw;
 }
 
 .strange_title {
     position: relative;
-    /* left: 30%;
-    top: 15%; */
-    padding-top: 2%;
-    width: 531px;
-    margin: 0 auto;
-    background-color: transparent;
+    padding-top: 27px;
+    text-align: center;
+}
+
+.strange_title_pc img {
+    width: 39%;
 }
 
 .strange_content_text {
-    background-color: transparent;
-    font-size: 18px;
-    text-align: justify;
+    font-size: var(--font-size18);
+    line-height: 1.8em;
 }
 
 .strange_content_title {
-    background-color: transparent;
-    font-size: 48px;
+    margin-bottom: 11px;
+    font-size: var(--font-size48);
+    line-height: 1em;
+}
+
+.strange_content_title_right {
+    margin-bottom: 11px;
+    font-size: var(--font-size48);
+    line-height: 1em;
+    text-align: right;
 }
 
 .strange_content01 {
-    position: relative;
-    top: 2%;
+    position: absolute;
+    top: 10%;
     left: 6%;
-    width: 100%;
+    width: 41%;
 }
 
 .strange_content01_inner {
     position: absolute;
-    top: 30%;
-    left: 34%;
-    width: 42%;
+    top: 34%;
+    left: 85%;
+    width: 94%;
 }
 
 .strange_shape03 {
     position: absolute;
+    top: 41%;
     left: 26%;
-    top: 51%;
+}
+
+.strange_shape03 img {
+    width: 12vw;
 }
 
 .strange_content02 {
     position: absolute;
-    top: 45%;
+    top: 37%;
     left: 54%;
-    width: 95%;
+    margin-right: 5%;
 }
 
 .strange_content02_inner {
     position: absolute;
-    top: 30%;
-    left: -38%;
-    width: 42%;
+    top: 33%;
+    right: 85%;
+    width: 99%;
 }
 
 .strange_shape04 {
     position: absolute;
-    top: 71%;
+    top: 63%;
     left: 59%;
+}
+
+.strange_shape04 img {
+    width: 14vw;
 }
 
 .strange_content03 {
     position: absolute;
-    top: 69%;
-    left: 3%;
-    width: 100%;
+    top: 64%;
+    left: 6%;
+    width: 41%;
 }
 
 .strange_content03_inner {
     position: absolute;
-    top: 80%;
-    left: 34%;
-    width: 47%;
+    top: 30%;
+    left: 84%;
+    width: 96%;
+}
+
+@media screen and (max-width: 1294px) {
+    .br_pc {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 767px) {
+    .strange_title_sp {
+        display: none;
+    }
+
+    .profile_title_sp {
+        display: none;
+    }
+
+    .strange_img01_sp {
+        display: none;
+    }
+
+    .strange_img02_sp {
+        display: none;
+    }
+
+    .strange_img03_sp {
+        display: none;
+    }
+
+    .strange_shape_sp {
+        display: none;
+    }
+
+    .footer_shape_sp {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .profile_shape {
+        position: absolute;
+        top: -25px;
+        left: 17%;
+    }
+
+    .profile_shape img {
+        width: 14vw;
+    }
+
+    .profile_title {
+        display: none;
+    }
+
+    .profile_title_sp {
+        position: absolute;
+        top: 0;
+        left: 5%;
+    }
+
+    .profile_title_sp img {
+        width: 10vw;
+    }
+
+    .profile_img {
+        margin-bottom: 16px;
+    }
+
+    .profile_img img {
+        width: 60vw;
+    }
+
+    .profile_text {
+        font-size: 26px;
+        line-height: 1.7;
+    }
+
+    .strange {
+        padding-top: 232px;
+    }
+
+    .strange_title {
+        padding-top: 20px;
+    }
+
+    .strange_shape01 {
+        top: -32%;
+    }
+
+    .strange_shape_sp {
+        position: absolute;
+        top: 56%;
+    }
+
+    .profile_name {
+        margin-bottom: 31px;
+        font-size: 27px;
+    }
+
+    .strange_title_pc {
+        display: none;
+    }
+
+    .strange_title_sp img {
+        width: 39%;
+    }
+
+    .strange_content01 {
+        top: 8%;
+        left: 7%;
+        width: 80%;
+    }
+
+    .strange_img01 {
+        display: none;
+    }
+
+    .strange_img01_sp img {
+        width: 53%;
+    }
+
+    .strange_content01_inner {
+        top: 71%;
+        left: 28%;
+        width: 72%;
+    }
+
+    .strange_content_title {
+        margin-bottom: 16px;
+        font-size: 46px;
+    }
+
+    .strange_content_text {
+        font-size: 26px;
+        line-height: 1.8;
+    }
+
+    .strange_shape03 {
+        top: 48%;
+        left: 27%;
+    }
+
+    .strange_img02 {
+        display: none;
+    }
+
+    .strange_img02_sp img {
+        width: 92%;
+    }
+
+    .strange_content02 {
+        top: 45%;
+        left: 50%;
+    }
+
+    .strange_content02_inner {
+        top: 79%;
+        right: 54%;
+        width: 125%;
+    }
+
+    .strange_shape04 {
+        top: 67%;
+        left: 75%;
+    }
+
+    .strange_shape04 img {
+        width: 13vw;
+    }
+
+    .strange_content03 {
+        top: 81%;
+        left: 8%;
+        width: 80%;
+    }
+
+    .strange_img03 {
+        display: none;
+    }
+
+    .strange_img03_sp img {
+        width: 53%;
+    }
+
+    .strange_content03_inner {
+        top: 73%;
+        left: 26%;
+        width: 72%;
+    }
 }
