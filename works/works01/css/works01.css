@@ -14,12 +14,13 @@
 }
 
 .website_title {
-    font-size: 70px;
+    /* font-size: 70px; */
+    font-size: 5.1244vw;
     line-height: 1.4;
 }
 
 .website_text {
-    font-size: 20px;
+    font-size: 1.3177vw;
 }
 
 .about_shape {
@@ -181,13 +182,13 @@
 
 @media screen and (max-width: 1100px) {
     .website_title {
-        font-size: 60px;
+        /* font-size: 60px; */
     }
 }
 
 @media screen and (max-width: 990px) {
     .website_title {
-        font-size: 50px;
+        /* font-size: 50px; */
     }
 }
 
@@ -197,6 +198,6 @@
     }
 
     .website_title {
-        font-size: 40px;
+        /* font-size: 40px; */
     }
 }
