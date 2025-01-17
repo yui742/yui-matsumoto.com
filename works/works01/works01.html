@@ -14,122 +14,138 @@
 </head>
 
 <body>
+    <!-- header -->
     <header>
         <div class="header_wrap">
-            <h1 class="nav_logo"><a href="../../index.html"><img src="../../images/logo.png" alt="ロゴ"></a></h1>
-            <ul>
-                <li class="li_about"><a href="../../about/about.html"><img src="../../images/about.png" alt="ABOUT"></a>
-                </li>
-                <li class="li_works"><a href="#otherworks"><img src="../../images/works.png" alt="WORKS"></a></li>
-                <li class="li_contact"><a href="../../index.html#contact"><img src="../../images/contact.png"
-                            alt="CONTACT"></a></li>
-            </ul>
+            <h1 class="nav_logo"><a href="/index.html"><img src="../../images/logo.png" alt="ロゴ"></a></h1>
+            <nav class="pc_nav">
+                <ul>
+                    <li class="li_about"><a href="/about/about.html"><img src="../../images/about.png" alt="ABOUT"></a>
+                    </li>
+                    <li class="li_works"><a href="/index.html#works"><img src="../../images/works.png" alt="WORKS"></a>
+                    </li>
+                    <li class="li_contact"><a href="/index.html#contact"><img src="../../images/contact.png"
+                                alt="CONTACT"></a>
+                    </li>
+                </ul>
+            </nav>
+            <div class="sp_btn" id="sp_btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <script>
+                const sp_btn = document.querySelector('#sp_btn')
+                if (sp_btn) {
+                    sp_btn.addEventListener('click', () => {
+                        sp_btn.classList.toggle('is-active');
+                    })
+                }
+            </script>
         </div>
     </header>
     <div class="inner">
-        <main>
-            <div class="works_website">
-                <div class="website_title_wrap">
-                    <p class="website_title">美容室のWebサイト</p>
-                    <p class="website_text">Type Website</p>
-                    <div class="about_shape">
-                        <img src="../../images/about_shape.svg" alt="about_shape">
+        <!-- <main> -->
+        <!-- <div class="works_website"> -->
+        <div class="website_title_wrap">
+            <p class="website_title">美容室のWebサイト</p>
+            <p class="website_text">Type Website</p>
+            <div class="about_shape">
+                <img src="../../images/about_shape.svg" alt="about_shape">
+            </div>
+        </div>
+        <div class="website_desktop">
+            <img src="images/../../images/works01_desktop.png" alt="works01_desktop">
+        </div>
+        <div class="website_text_wrap">
+            <div class="works01_shape01"><img src="images/../../images/works01_shape01.svg" alt="works01_shape01">
+            </div>
+            <div class="works01_shape02"><img src="images/../../images/works01_shape02.svg" alt="works01_shape02">
+            </div>
+            <div class="website_text_inner">
+                <dl>
+                    <dt>ターゲット</dt>
+                    <dd>女性(20代〜50代)</dd>
+                </dl>
+                <dl>
+                    <dt>目的</dt>
+                    <dd>お店の認知向上と予約獲得・SNSフォロワーを獲得する。</dd>
+                </dl>
+                <dl>
+                    <dt>デザイン</dt>
+                    <dd>お客様の心理的なハードルを下げるため。お店の想いをリード文とコンセプトセクションに込めました。スタッフ一覧ではお客様とコミュニケーションをとっている時の表情がよく分かる画像を選びました。
+                    </dd>
+                </dl>
+                <dl>
+                    <dt>制作範囲・期間</dt>
+                    <dd>企画・ワイヤーフレーム:3日<br>デザイン:8日</dd>
+                </dl>
+                <dl>
+                    <dt>使用ツール</dt>
+                    <dd>Photoshop/Illustrator</dd>
+                </dl>
+            </div>
+        </div>
+        <div class="website_mockup_wrap">
+            <div class="works01_shape03"><img src="../images/works01_shape03.svg" alt="works01_shape03">
+            </div>
+            <div class="works01_shape04"><img src="../images/works01_shape04.svg" alt="works01_shape04"></div>
+            <div class="works01_shape05"><img src="../images/works01_shape05.svg" alt="works01_shape05"></div>
+            <div class="works01_shape06"><img src="../images/works01_shape06.svg" alt="works01_shape06"></div>
+            <div class="works01_shape07"><img src="../images/works01_shape07.svg" alt="works01_shape07"></div>
+            <div class="works01_shape08"><img src="../images/works01_shape08.svg" alt="works01_shape08"></div>
+            <div class="works01_shape09"><img src="../images/works01_shape09.svg" alt="works01_shape09"></div>
+            <div class="website_mockup_inner">
+                <div class="mockup"><img src="../images/works01_mockup.png" alt="website_mockup"></div>
+            </div>
+        </div>
+    </div>
+    <section id="otherworks">
+        <div class="works_inner">
+            <h2 class="works_title"><img src="../images/works_title.png" alt="works_title"></h2>
+            <div class="works_content_wrap">
+                <div class="works_content_inner">
+                    <div class="works_content">
+                        <div class="content_img">
+                            <a href="../works05/works05.html">
+                                <img src="../../images/banner01.jpg" alt="学割バナー">
+                            </a>
+                        </div>
+                        <p class="works_text">学割プランのバナー</p>
+                        <p class="works_tool">Photoshop/Illustrator</p>
                     </div>
-                </div>
-                <div class="website_desktop">
-                    <img src="images/../../images/works01_desktop.png" alt="works01_desktop">
-                </div>
-                <div class="website_text_wrap">
-                    <div class="works01_shape01"><img src="images/../../images/works01_shape01.svg"
-                            alt="works01_shape01">
+                    <div class="works_content">
+                        <div class="content_img">
+                            <a href="../works04/works04.html">
+                                <img src="../../images/banner02.jpg" alt="ハンバーガーのバナー">
+                            </a>
+                        </div>
+                        <p class="works_text">ハンバーガーのバナー</p>
+                        <p class="works_tool">Photoshop/Illustrator</p>
                     </div>
-                    <div class="works01_shape02"><img src="images/../../images/works01_shape02.svg"
-                            alt="works01_shape02">
+                    <div class="works_content">
+                        <div class="content_img">
+                            <a href="../works03/works03.html">
+                                <img src="../../images/banner03.jpg" alt="ハンバーガーのバナー">
+                            </a>
+                        </div>
+                        <p class="works_text">ハンバーガーのバナー</p>
+                        <p class="works_tool">Photoshop/Illustrator</p>
                     </div>
-                    <div class="website_text_inner">
-                        <dl>
-                            <dt>ターゲット</dt>
-                            <dd>女性(20代〜50代)</dd>
-                        </dl>
-                        <dl>
-                            <dt>目的</dt>
-                            <dd>お店の認知向上と予約獲得・SNSフォロワーを獲得する。</dd>
-                        </dl>
-                        <dl>
-                            <dt>デザイン</dt>
-                            <dd>お客様の心理的なハードルを下げるため。お店の想いをリード文とコンセプトセクションに込めました。スタッフ一覧ではお客様とコミュニケーションをとっている時の表情がよく分かる画像を選びました。
-                            </dd>
-                        </dl>
-                        <dl>
-                            <dt>制作範囲・期間</dt>
-                            <dd>企画・ワイヤーフレーム:3日<br>デザイン:8日</dd>
-                        </dl>
-                        <dl>
-                            <dt>使用ツール</dt>
-                            <dd>Photoshop/Illustrator</dd>
-                        </dl>
-                    </div>
-                </div>
-                <div class="website_mockup_wrap">
-                    <div class="works01_shape03"><img src="../images/works01_shape03.svg" alt="works01_shape03">
-                    </div>
-                    <div class="works01_shape04"><img src="../images/works01_shape04.svg" alt="works01_shape04"></div>
-                    <div class="works01_shape05"><img src="../images/works01_shape05.svg" alt="works01_shape05"></div>
-                    <div class="works01_shape06"><img src="../images/works01_shape06.svg" alt="works01_shape06"></div>
-                    <div class="works01_shape07"><img src="../images/works01_shape07.svg" alt="works01_shape07"></div>
-                    <div class="works01_shape08"><img src="../images/works01_shape08.svg" alt="works01_shape08"></div>
-                    <div class="works01_shape09"><img src="../images/works01_shape09.svg" alt="works01_shape09"></div>
-                    <div class="website_mockup_inner">
-                        <div class="mockup"><img src="../images/works01_mockup.png" alt="website_mockup"></div>
+                    <div class="works_content">
+                        <div class="content_img">
+                            <a href="../works02/works02.html">
+                                <img src="../../images/site01.jpg" alt="コーヒーショップのwebサイト">
+                            </a>
+                        </div>
+                        <p class="works_text">コーヒーショップのwebサイト</p>
+                        <p class="works_tool">HTML/CSS/jQuery</p>
                     </div>
                 </div>
             </div>
-            <section id="otherworks">
-                <div class="works_inner">
-                    <h2 class="works_title"><img src="../images/works_title.png" alt="works_title"></h2>
-                    <div class="works_content_wrap">
-                        <div class="works_content_inner">
-                            <div class="works_content">
-                                <div class="content_img">
-                                    <a href="../works05/works05.html">
-                                        <img src="../../images/banner01.jpg" alt="学割バナー">
-                                    </a>
-                                </div>
-                                <p class="works_text">学割プランのバナー</p>
-                                <p class="works_tool">Photoshop/Illustrator</p>
-                            </div>
-                            <div class="works_content">
-                                <div class="content_img">
-                                    <a href="../works04/works04.html">
-                                        <img src="../../images/banner02.jpg" alt="ハンバーガーのバナー">
-                                    </a>
-                                </div>
-                                <p class="works_text">ハンバーガーのバナー</p>
-                                <p class="works_tool">Photoshop/Illustrator</p>
-                            </div>
-                            <div class="works_content">
-                                <div class="content_img">
-                                    <a href="../works03/works03.html">
-                                        <img src="../../images/banner03.jpg" alt="ハンバーガーのバナー">
-                                    </a>
-                                </div>
-                                <p class="works_text">ハンバーガーのバナー</p>
-                                <p class="works_tool">Photoshop/Illustrator</p>
-                            </div>
-                            <div class="works_content">
-                                <div class="content_img">
-                                    <a href="../works02/works02.html">
-                                        <img src="../../images/site01.jpg" alt="コーヒーショップのwebサイト">
-                                    </a>
-                                </div>
-                                <p class="works_text">コーヒーショップのwebサイト</p>
-                                <p class="works_tool">HTML/CSS/jQuery</p>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </section>
-        </main>
+        </div>
+    </section>
+    </main>
     </div>
     <footer>
         <div class="footer_shape_wrap">
