@@ -3,8 +3,7 @@
 /* profileセクション */
 .profile {
     max-width: 1366px;
-    height: 841px;
-    padding-top: 102px;
+    padding-top: 6.5vw;
 }
 
 .profile_inner {
@@ -13,9 +12,13 @@
 }
 
 .profile_shape {
+    background: url(../images/profile_shape.svg) no-repeat;
     position: absolute;
-    top: 2px;
-    left: 12%;
+    top: -1.098vw;
+    left: 9.5vw;
+    width: 17vw;
+    height: 12.445vw;
+    background-size: contain;
 }
 
 .profile_shape img {
@@ -23,31 +26,35 @@
 }
 
 .profile_title {
+    background: url(/images/about_title.png) no-repeat;
     position: absolute;
     top: 0;
-    left: 5%;
+    left: 4.4vw;
+    width: 7vw;
+    height: 35.6515vw;
+    background-size: contain;
 }
 
 .profile_title img {
-    width: 9vw;
+    width: 7vw;
 }
 
 .profile_content {
-    width: 66%;
+    width: 60.2489vw;
     margin: 0 auto;
     text-align: center;
 }
 
 .profile_img {
-    margin-bottom: 28px;
+    margin-bottom: 2vw;
 }
 
 .profile_img img {
-    width: 43vw;
+    width: 37.7vw;
 }
 
 .profile_name {
-    margin-bottom: 20px;
+    margin-bottom: 1.4641vw;
     font-size: 35px;
     line-height: 1;
     text-align: center;
@@ -55,7 +62,7 @@
 
 .profile_text {
     font-size: 24px;
-    margin: -12px 0;
+    margin: -0.8784vw 0;
     line-height: 1.8em;
     text-align: left;
 }
@@ -68,7 +75,7 @@
 .strange {
     max-width: 1366px;
     margin: 0 auto;
-    padding-top: 295px;
+    padding-top: 24.5vw;
 }
 
 .strange_inner {
@@ -79,12 +86,12 @@
 
 .strange_shape01 {
     position: absolute;
-    top: -25%;
+    top: -35.5vw;
     z-index: -1;
 }
 .strange_shape02 {
     position: absolute;
-    left: 60%;
+    left: 57.3vw;
 }
 
 .strange_shape02 img {
@@ -93,7 +100,7 @@
 
 .strange_title {
     position: relative;
-    padding-top: 27px;
+    padding-top: 1.9765vw;
     text-align: center;
 }
 
@@ -107,13 +114,13 @@
 }
 
 .strange_content_title {
-    margin-bottom: 11px;
+    margin-bottom: 0.7vw;
     font-size: var(--font-size48);
     line-height: 1em;
 }
 
 .strange_content_title_right {
-    margin-bottom: 11px;
+    margin-bottom: 0.7vw;
     font-size: var(--font-size48);
     line-height: 1em;
     text-align: right;
@@ -121,21 +128,21 @@
 
 .strange_content01 {
     position: absolute;
-    top: 10%;
-    left: 6%;
-    width: 41%;
+    top: 15.4vw;
+    left: 5.6vw;
+    width: 39.9707vw;
 }
 
 .strange_content01_inner {
     position: absolute;
-    top: 34%;
-    left: 85%;
-    width: 94%;
+    top: 12.8vw;
+    left: 32.2vw;
+    width: 39vw;
 }
 
 .strange_shape03 {
     position: absolute;
-    top: 41%;
+    top: 65.3001vw;
     left: 26%;
 }
 
@@ -145,16 +152,15 @@
 
 .strange_content02 {
     position: absolute;
-    top: 37%;
-    left: 54%;
-    margin-right: 5%;
+    top: 55.1vw;
+    right: 5.7vw;
 }
 
 .strange_content02_inner {
     position: absolute;
-    top: 33%;
-    right: 85%;
-    width: 99%;
+    top: 12.5vw;
+    right: 32vw;
+    width: 98%;
 }
 
 .strange_shape04 {
@@ -251,12 +257,12 @@
     }
 
     .profile_text {
-        font-size: 26px;
+        font-size: 3.7vw;
         line-height: 1.7;
     }
 
     .strange {
-        padding-top: 232px;
+        padding-top: 30.29vw;
     }
 
     .strange_title {
@@ -264,7 +270,7 @@
     }
 
     .strange_shape01 {
-        top: -32%;
+        top: -79vw;
     }
 
     .strange_shape_sp {
@@ -274,7 +280,7 @@
 
     .profile_name {
         margin-bottom: 31px;
-        font-size: 27px;
+        font-size: 3.7vw;
     }
 
     .strange_title_pc {
@@ -282,7 +288,7 @@
     }
 
     .strange_title_sp img {
-        width: 39%;
+        width: 38.77284vw;
     }
 
     .strange_content01 {
@@ -366,5 +372,11 @@
         top: 73%;
         left: 26%;
         width: 72%;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .profile_title_sp img {
+        width: 11vw;
     }
 }
