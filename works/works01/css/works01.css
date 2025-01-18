@@ -51,17 +51,18 @@
 }
 
 .website_text_inner {
-    max-width: 1080px;
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
     margin: 0 auto;
     padding: 0px 9%;
+    max-width: 1080px;
     font-size: 20px;
 }
 
 .website_text_inner dl {
     display: flex;
     flex-wrap: wrap;
-    /* margin-bottom: 50px; */
-    margin-bottom: 5%;
 }
 
 .website_text_inner dt {
@@ -196,6 +197,12 @@
     }
 
     .website_text_inner dl {
-        display: block;
+        gap: 9px;
+        flex-direction: column;
+    }
+
+    .website_text_inner dt,
+    .website_text_inner dd {
+        width: 100%;
     }
 }
