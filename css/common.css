@@ -64,6 +64,10 @@ body {
     background-color: #f3e9cf;
 }
 
+html {
+    font-size: 62.5%;
+}
+
 .header_wrap {
     display: flex;
     justify-content: space-between;

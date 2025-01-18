@@ -15,12 +15,12 @@
 
 .website_title {
     /* font-size: 70px; */
-    font-size: 5.1244vw;
+    font-size: 6.1244vw;
     line-height: 1.4;
 }
 
 .website_text {
-    font-size: 1.3177vw;
+    font-size: 1.6vw;
 }
 
 .about_shape {
@@ -57,7 +57,7 @@
     margin: 0 auto;
     padding: 0px 9%;
     max-width: 1080px;
-    font-size: 20px;
+    font-size: 2rem;
 }
 
 .website_text_inner dl {
@@ -194,6 +194,10 @@
 
     .works01_shape01 {
         top: -6%;
+    }
+
+    .website_text_inner {
+        font-size: 1.3rem;
     }
 
     .website_text_inner dl {
