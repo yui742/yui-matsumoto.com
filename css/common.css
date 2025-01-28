@@ -19,7 +19,7 @@ li {
     padding: 0;
     /*デフォルトの文字色、font-familyを予め当てておく*/
     color: #4f260b;
-    line-height: 2em;
+    line-height: 1em;
     font-family: "游ゴシック体", YuGothic, "游ゴシック Medium",
         "Yu Gothic Medium", "游ゴシック", "Yu Gothic", sans-serif;
     font-feature-settings: "palt";
@@ -151,9 +151,8 @@ footer {
 
 .footer_shape02 {
     position: absolute;
-    top: -65px;
-    /* right: 35%; */
     width: 43%;
+    bottom: 0px;
 }
 
 .footer_shape03 {
@@ -166,7 +165,7 @@ footer {
 .footer_inner {
     position: relative;
     max-width: 1100px;
-    margin: 0 10%;
+    margin: 0 12%;
     z-index: 1;
 }
 
@@ -190,7 +189,7 @@ footer {
 .footer_button::before {
     position: absolute;
     top: 41%;
-    left: 30px;
+    left: 3.6vw;
     width: 6px;
     height: 10px;
     background-image: url(../images/icon_arrow_left.svg);
@@ -225,11 +224,11 @@ footer {
 
 .top {
     position: fixed;
-    right: 60px;
-    bottom: 20px;
+    right: 4%;
+    bottom: 6%;
     z-index: 1;
-    width: 151px;
-    height: 151px;
+    width: 11%;
+    height: 6%;
     padding: 10px 15px;
 }
 
@@ -310,13 +309,13 @@ footer {
     }
 
     .footer_inner {
-        margin: 77% 88px 42px 88px;
+        margin-top: 34%;
     }
 
     .footer_button {
-        width: 322px;
-        height: 102px;
-        border-radius: 51px;
+        width: 42.13333vw;
+        height: 13.33333vw;
+        border-radius: 13.33333vw;
     }
 
     .footer_button img {
@@ -325,11 +324,13 @@ footer {
 
     .footer_button::before {
         top: 39%;
-        width: 12px;
-        height: 20px;
+        width: 1.5645vw;
+        height: 2.6075vh;
     }
 
     .footer_nav {
+        width: 67%;
+        margin: 0 auto;
         padding-top: 10%;
     }
 
@@ -346,6 +347,16 @@ footer {
     }
 
     .footer_copy {
-        padding: 7% 0 20px 0;
+        padding: 7% 0 2% 0;
+        width: 27%;
+        margin: 0 auto;
+    }
+
+    .top {
+        right: 4%;
+        bottom: 6%;
+        z-index: 1;
+        width: 22%;
+        height: 9%;
     }
 }
