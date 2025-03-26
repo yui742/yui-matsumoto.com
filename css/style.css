@@ -3,24 +3,15 @@
 .mv {
     position: relative;
     max-height: calc(100vh - 105px);
-    margin-bottom: 72px;
     overflow-y: hidden;
 }
 
-.mv_img {
-    /* position: relative; */
-    /* height: 100%; */
-    /* padding-top: 66%; */
-    /* background-image: url("../images/mv.jpg"); */
-    /* background-size: contain; */
-    /* background-repeat: no-repeat; */
-}
-
-.mv_img img {
+.mv__img img {
     width: 100%;
 }
 
-.mv_text {
+/* タイトル */
+.mv__title {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -29,69 +20,63 @@
     text-align: center;
 }
 
-.mv_text img {
+.mv__title img {
     max-width: 70vw;
 }
 
 /* aboutセクション */
 #about {
-    max-width: 1366px;
-    padding-top: 200px;
-}
-
-.about_inner {
-    display: flex;
     position: relative;
-    padding-top: 35px;
-    /* background-image: url(../images/about_shape.png);
-    background-repeat: no-repeat;
-    background-position: 93% 272px; */
+    max-width: 1366px;
+    padding-top: 30%;
 }
 
-.about_title {
-    width: 100%;
-    padding-left: 4%;
+.about__inner {
+    display: flex;
 }
 
-.about_shape {
-    position: absolute;
-    /* top: px; */
-    left: 74%;
-    z-index: 1;
-    /* width: 28%; */
-    /* background-image: url(../images/about_shape.png); */
-    /* background-position: ; */
-    /* background-repeat: no-repeat; */
+/* 背景シェイプ */
+.shape--left-orange-01 {
+    top: 34%;
+    right: 2%;
+    width: 23%;
 }
 
-.about_content {
-    position: absolute;
-    top: 26%;
-    left: 27%;
+/* タイトル */
+.about__title {
+    top: 39%;
+    left: 5%;
+    width: 7%;
 }
 
-.about_text {
-    background-color: transparent;
-    font-size: 20px;
-    line-height: 48px;
+.about__container {
+    width: 45%;
+    margin: 0 auto;
     text-align: center;
-    padding-bottom: 15%;
 }
 
-.about_button {
+.about__description {
+    background-color: transparent;
+    font-size: min(1.4641vw, 20px);
+    line-height: 2.5em;
+    text-align: center;
+    margin-bottom: 13%;
+}
+
+.about__btn-link {
     display: flex;
     align-items: center; /* 垂直方向の中央揃え */
     justify-content: center; /* 水平方向の中央揃え */
     position: relative;
-    width: 224px;
-    height: 60px;
+    width: clamp(150px, 17vw, 224px);
+    height: clamp(40px, 5vw, 60px);
     margin: 0 auto;
     border: none;
     border-radius: 9999px;
     background: #f46159;
 }
 
-.about_button::before {
+.about__btn-link::before {
     position: absolute;
     top: 43%;
     right: 30px;
@@ -103,23 +88,22 @@
     content: "";
 }
 
-.about_button img {
+.about__btn-link img {
     display: block;
-    width: 101px;
+    width: 45%;
     margin: 0 auto;
 }
 
 /* skillセクション */
 .skill {
-    position: relative;
     max-width: 1366px;
+    padding-top: 14%;
 }
 
-.skill_inner {
+.skill__inner {
     position: relative;
-    height: 1332px;
+    /* height: 1190px; */
     margin: 0 auto;
-    padding-top: 14%;
     /* background-image: url(../images/skill_shape02.svg),
         url(../images/skill_shape01.svg); */
     /* background-position: 0px 189px; */
@@ -127,299 +111,243 @@
     /* background-repeat: no-repeat; */
 }
 
-.skill_shape04 {
-    position: absolute;
-    top: -20%;
-    z-index: -1;
+/* 背景シェイプ */
+.skill__shape--bg {
+    top: -49%;
     width: 100%;
 }
 
-.skill_shape01 {
-    position: absolute;
-    top: 7%;
+/* 黄色のシェイプ */
+.shape--left-yellow-04 {
+    top: -6%;
     left: 7%;
-    z-index: 1;
     width: 15%;
+    z-index: 1;
 }
 
-.skill_shape02 {
-    position: absolute;
+/* 背景シェイプ */
+.skill__shape--orange-wave {
     width: 90%;
 }
 
-.skill_title {
-    position: absolute;
-    top: 19%;
-    right: 5%;
-    width: 8%;
-}
-
-.skill_content_wrap {
-    display: flex;
-    gap: 9%;
-    position: relative;
-    max-width: 1100px;
-    margin: 0 auto;
-    padding-top: 12%;
-}
-
-.skill_content_wrap img {
-    width: 60%;
-}
-
-.design_content {
-    width: 40%;
-    text-align: center;
-}
-
-.coding_content {
-    width: 40%;
-    padding-top: 195px;
-    text-align: center;
-}
-
-.skill_content_wrap h3 {
-    padding-top: 15px;
-    background-color: transparent;
-    font-size: 36px;
-}
-
-.skill_text01 {
-    padding-top: 2px;
-    background-color: transparent;
-}
-
-.skill_text02 {
-    padding-top: 10px;
-    background-color: transparent;
-    text-align: center;
-    font-size: 20px;
-}
-
-.skill_tool {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr); /* 1行3列 */
-    gap: 14px;
-    justify-content: center;
-    padding-top: 8px;
-}
-
-.skill_tool p.tool_content,
-.small_skill_tool p.tool_content {
-    width: 130px;
-    height: 44px;
-    border-radius: 5px;
-    background-color: #f3e9cf;
-    font-size: 18px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.small_skill_tool {
-    display: flex;
-    justify-content: center;
-    gap: 14px;
-    padding-top: 8px;
-}
-
-.skill_shape03 {
-    position: absolute;
-    top: 80%;
+/* 黄色と赤のシェイプ */
+.shape--red-yellow-05 {
+    top: 101%;
     right: 28%;
     width: 8%;
 }
 
-/* worksセクション */
-.works {
-    max-width: 1366px;
-}
-
-.works_inner {
-    /* display: inline-block; */
-    position: relative;
-    height: 820px;
-    padding-top: 3%;
-}
-
-.works_title {
+/* タイトル */
+.skill__title {
     position: absolute;
-    left: 33%;
-    z-index: 1;
-    width: 452px;
+    top: 8%;
+    right: 5%;
+    width: 8%;
+}
+
+.skill__list {
+    display: flex;
+    gap: 10%;
+    max-width: 1100px;
+    margin: 0 10%;
+    padding-top: 14%;
+}
+
+.skill__list img {
+    width: 60%; /* 丸いアイコンのサイズ調整 */
+    margin-bottom: 7%;
+}
+
+.skill__item {
+    width: 40%;
+    text-align: center;
+}
+
+.skill__item--coding {
+    padding-top: 18%;
+}
+
+.skill__subtitle {
     background-color: transparent;
+    font-size: min(2.6354vw, 36px);
+    font-weight: normal;
+    margin-bottom: 4%;
 }
 
-/* .works_shape01 {
-    position: absolute;
-    width: 100%;
-} */
+.skill__description {
+    background-color: transparent;
+    font-size: min(1.3177vw, 18px);
+    line-height: 1.944em;
+    margin-bottom: 5%;
+}
 
-.works_shape01 {
-    position: absolute;
-    top: 15%;
+.skill__tools-title {
+    background-color: transparent;
+    text-align: center;
+    font-size: min(1.4641vw, 20px);
+    margin-bottom: 3%;
+}
+
+.skill__tools--small {
+    display: flex;
+    justify-content: center;
+    gap: min(0.8vw, 14px);
+}
+
+.skill__tools {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(3, 1fr);
+    gap: min(0.8vw, 14px);
+}
+
+.skill__tools p.skill__tool,
+.skill__tools--small p.skill__tool {
+    width: 7.3em;
+    height: 2.6em;
+    border-radius: 5px;
+    background-color: #f3e9cf;
+    font-size: min(1.3177vw, 18px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* worksセクション */
+#works {
+    position: relative;
+    margin-top: 20%;
+    padding-top: 7%;
+}
+
+/* 黄色のシェイプ */
+.shape--light-yellow-02 {
+    top: 23%;
     left: 29%;
     width: 13%;
 }
 
-.works_content_wrap {
-    /* display: flex; */
-    /* flex-wrap: wrap; */
-    position: absolute;
-    left: 133px;
-    z-index: 1;
-    /* width: 1100px; */
-    padding-top: 170px;
-    background-color: transparent;
-}
-
-.works_content_inner {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 7%;
-}
-
-.works_content {
-    margin-bottom: 90px;
-}
-
-.works_content_img {
-    width: 310px;
-}
-
-.works_text {
-    padding-top: 10px;
-    background-color: transparent;
-}
-
-.works_tool {
-    background-color: transparent;
-}
-
-.works_shape03 {
-    position: absolute;
-    top: 45%;
-    width: 100%;
-}
-
-/* 
-.works_shape02 {
-    position: absolute;
-    top: 98%;
+/* オレンジのシェイプ */
+.shape--right-orange-01 {
+    top: 109%;
     left: 10%;
     width: 17%;
-} */
-
-/* コンタクトセクション */
-.contact {
-    max-width: 1366px;
-    height: 1470px;
-    margin: 0 auto;
 }
 
-.contact_inner {
+/* contactセクション */
+#contact {
+    max-width: 1366px;
+    /* height: 1280px; */
+    /* margin: 8% auto 0; */
+    padding-top: 7%;
+}
+
+.contact__inner {
     position: relative;
     margin: 0 auto;
 }
 
-.contact_shape02 {
-    position: absolute;
-    /* top: 98%; */
-    left: 11%;
-    width: 16%;
-}
-
-.contact_shape {
-    position: absolute;
+/* 背景シェイプ */
+.contact__shape--orange-wave {
     width: 100%;
 }
 
-.contact_title {
-    position: relative;
-    /* z-index: 1; */
-    width: 39%;
-    margin: 0 auto;
+/* 黄色のシェイプ */
+.shape--left-yellow-03 {
+    top: 106%;
+    right: 38%;
+    width: 10%;
+}
+
+.contact__title {
+    margin-bottom: 4%;
     padding-top: 20%;
+    text-align: center;
     background-color: transparent;
 }
 
-.form_wrap {
-    position: relative;
-    width: 100%; /* 必要に応じて調整 */
-    max-width: 832px; /* 必要に応じて調整 */
+.contact__title img {
+    width: 39%;
+}
+
+.contact__form {
+    width: 61%; /* 必要に応じて調整 */
     margin: 0 auto;
-    padding-top: 3%;
+}
+
+.form__item {
+    margin-bottom: 6%;
+}
+
+.form__item:nth-child(3) {
+    margin-bottom: 3%;
 }
 
 label {
     display: block;
-    font-size: 18px;
-}
-
-.form_inner {
-    padding-top: 39px;
-}
-
-.form_inner:first-child {
-    padding-top: 0px;
-}
-
-.contact_text {
-    padding-top: 13px;
-    background-color: transparent;
-    font-weight: bold;
-    font-size: 11px;
+    font-size: min(1.3177vw, 18px);
+    margin-bottom: 1%;
 }
 
 input[type="text"] {
-    width: 832px;
-    height: 63px;
-    padding-left: 15px;
+    width: 98%;
+    height: 4.4em;
+    padding-left: 2%;
     border: none;
-    border-radius: 8px;
+    border-radius: min(0.96153vw, 8px);
+    font-size: min(1.0248vw, 14px);
 }
 
 input[type="email"] {
-    width: 832px;
-    height: 63px;
-    padding-left: 15px;
+    width: 98%;
+    height: 4.4em;
+    padding-left: 2%;
     border: none;
-    border-radius: 8px;
+    border-radius: min(0.96153vw, 8px);
+    font-size: min(1.0248vw, 14px);
 }
 
 textarea {
-    width: 832px;
-    height: 323px;
-    padding: 25px 0px 0px 15px;
+    width: 98%;
+    height: 21.9em;
+    padding: 2% 0px 0px 2%;
     border: none;
-    border-radius: 12px;
+    border-radius: min(1.4423vw, 12px);
+    font-size: min(1.0248vw, 14px);
 }
 
-.contact_button_wrap {
-    padding-top: 12%;
+.contact__notice {
+    background-color: transparent;
+    font-weight: bold;
+    font-size: min(0.8052vw, 11px);
+    margin-bottom: 12%;
+    line-height: 1.7;
 }
-.contact_button {
+
+.contact__btn-link {
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 224px;
-    height: 60px;
+    width: clamp(150px, 17vw, 224px);
+    height: clamp(40px, 5vw, 60px);
     margin: 0 auto;
     border-radius: 9999px;
     border: none;
     background: #f46159;
 }
 
-.contact_button img {
-    width: 101px;
+.contact__btn-link img {
+    width: 43%;
 }
 
 @media screen and (min-width: 767px) {
-    .mv_sp_img {
+    /* mvセクション */
+    .mv__img--sp {
         display: none;
     }
 
-    .about_title_sp {
+    /* aboutセクション */
+    .about__title--sp {
         display: none;
     }
 
@@ -427,81 +355,299 @@ textarea {
         display: none;
     }
 
-    .skill_shape02_sp {
+    /* skillセクション */
+    /* 背景シェイプ */
+    .skill__shape--bg-top-sp {
+        display: none;
+    }
+
+    /* 背景シェイプ */
+    .skill__shape--orange-wave-sp {
+        display: none;
+    }
+
+    /* 背景シェイプ */
+    .skill__shape--bg-bottom-sp {
+        display: none;
+    }
+
+    /* 黄色のシェイプ */
+    .shape--left-yellow-06 {
+        display: none;
+    }
+
+    /* 黄色と赤のシェイプ */
+    .shape--red-yellow-08 {
+        display: none;
+    }
+
+    /* オレンジのシェイプ */
+    .shape--orange-03 {
+        display: none;
+    }
+
+    /* 赤色のシェイプ */
+    .shape--small-red-04 {
+        display: none;
+    }
+
+    /* worksセクション */
+    /* オレンジのシェイプ */
+    .shape--small-light-orange-01-sp {
+        display: none;
+    }
+
+    /* 背景シェイプ */
+    .works__shape--bg-01-sp-top {
+        display: none;
+    }
+
+    /* 背景シェイプ */
+    .works__shape--bg-01-sp-bottom {
+        display: none;
+    }
+
+    /* 黄色のシェイプ */
+    .shape--light-yellow-01-sp {
+        display: none;
+    }
+
+    /* 黄色のシェイプ */
+    .shape--right-yellow-03 {
+        display: none;
+    }
+
+    /* 赤色と黄色のシェイプ */
+    .shape--red-yellow-02-sp {
+        display: none;
+    }
+
+    /* 赤色と黄色のシェイプ */
+    .shape--red-yellow-09 {
+        display: none;
+    }
+
+    .works__title--sp {
+        display: none;
+    }
+
+    /* contactセクション */
+    /* 背景シェイプ */
+    .contact__shape--orange-wave-sp {
+        display: none;
+    }
+
+    /* タイトル */
+    .contact__title--sp {
+        display: none;
+    }
+
+    /* footer */
+    /* 背景シェイプ */
+    .footer__shape-bg-sp {
         display: none;
     }
 }
 
 @media screen and (max-width: 767px) {
+    /* mvセクション */
     .mv {
         max-height: none;
     }
-    .mv_img img {
+    .mv__img {
         display: none;
     }
 
-    .mv_sp_img img {
+    .mv__img--sp img {
         width: 100%;
         height: 100%;
     }
 
-    .about_title {
+    /* aboutセクション */
+    #about {
+        padding-top: 11%;
+    }
+
+    .shape--left-orange-01 {
+        top: 33%;
+        right: 4%;
+    }
+
+    .about__inner {
+        display: block;
+    }
+
+    .about__title {
         display: none;
     }
 
-    .about_title_sp {
-        margin-bottom: 97px;
+    .about__title--sp {
+        margin-bottom: 10%;
         text-align: center;
     }
 
-    .about_title_sp img {
+    .about__title--sp img {
         max-width: 30%;
     }
 
-    .about_shape {
-        z-index: 0;
+    .about__container {
+        width: 63%;
     }
 
-    .about_content {
-        top: 0%;
-        left: 20%;
+    .about__description {
+        font-size: min(3.2637vw, 25px);
+        line-height: 2.56;
+        margin-bottom: 17%;
     }
 
-    .about_text {
-        font-size: 25px;
-        line-height: 2.48;
+    .about__btn-link {
+        width: 42.0366vw;
+        height: 13.4vw;
     }
 
-    .skill_inner {
-        padding-top: 84%;
+    .about__btn-link img {
+        width: 47%;
     }
 
-    .skill_shape04 {
-        top: 18%;
+    /* skillセクション */
+    .skill {
+        padding-top: 11%;
+    }
+
+    .skill__inner {
+        /* height: 1870px; */
+    }
+
+    /* 背景シェイプ */
+    .skill__shape--bg {
+        display: none;
+    }
+
+    /* 黄色のシェイプ */
+    .shape--left-yellow-04 {
+        top: -1%;
+        left: 28%;
+        width: 14%;
+    }
+
+    /* 背景シェイプ */
+    .skill__shape--orange-wave {
+        display: none;
+    }
+
+    /* 黄色と赤のシェイプ */
+    .shape--red-yellow-05 {
+        display: none;
+    }
+
+    /* 背景シェイプ */
+    .skill__shape--bg-top-sp {
+        top: -20%;
+    }
+
+    /* 背景シェイプ */
+    .skill__shape--orange-wave-sp {
+        width: 90%;
+    }
+
+    /* 背景シェイプ */
+    .skill__shape--bg-bottom-sp {
+        top: 46%;
+    }
+
+    /* 黄色のシェイプ */
+    .shape--left-yellow-06 {
+        top: 24%;
+        right: 8%;
+        width: 14%;
+    }
+
+    /* 黄色と赤のシェイプ */
+    .shape--red-yellow-08 {
+        top: 71%;
+        left: 13%;
+        width: 16%;
+    }
+
+    /* オレンジのシェイプ */
+    .shape--orange-03 {
+        top: 97%;
+        right: 6%;
+        width: 10%;
+    }
+
+    /* 赤色のシェイプ */
+    .shape--small-red-04 {
+        top: 105%;
+        left: 33%;
+        width: 5%;
     }
 
     .skill_title {
         top: 37%;
     }
 
-    .skill_shape01 {
-        top: 32%;
-        left: 29%;
-    }
-
-    .skill_shape02 {
-        display: none;
-    }
-
-    .skill_shape02_sp {
-        position: absolute;
-        top: 33%;
-    }
-
-    .skill_content_wrap {
+    .skill__list {
         display: block;
+        margin: 0 11%;
+        padding-top: 23%;
     }
 
+    .skill__list img {
+        width: 49%;
+        margin-bottom: 5%;
+    }
+
+    .skill__item {
+        width: 90%;
+        text-align: center;
+    }
+
+    .skill__item--design {
+        margin-bottom: 16%;
+    }
+
+    .skill__item--coding {
+        padding-top: 0;
+    }
+
+    .skill__subtitle {
+        margin-bottom: 3%;
+        font-size: min(3.3898vw, 26px);
+    }
+
+    .skill__description {
+        font-size: min(3.3898vw, 26px);
+        line-height: 1.8em;
+        margin-bottom: 3%;
+    }
+
+    .skill__tools-title {
+        font-size: min(3.3898vw, 26px);
+        margin-bottom: 5%;
+    }
+
+    .skill__tools--small {
+        gap: 1.5vw;
+    }
+
+    .skill__tools {
+        gap: 1.5vw;
+        width: 69%;
+        margin: 0 auto;
+    }
+
+    .skill__tools p.skill__tool,
+    .skill__tools--small p.skill__tool {
+        width: 7.2em;
+        height: 2.6em;
+        font-size: min(2.3468vw, 18px);
+    }
+
+    .skill__tools p.skill__tool {
+        width: 6.4em;
+        height: 2.5em;
+    }
     .design_content {
         width: 45%;
         padding: 0 0 98px 22%;
@@ -510,5 +656,154 @@ textarea {
     .coding_content {
         width: 45%;
         padding: 0 0 0 22%;
+    }
+
+    /* worksセクション */
+    #works {
+        padding-top: 13%;
+    }
+
+    /* 黄色のシェイプ */
+    .shape--light-yellow-02 {
+        display: none;
+    }
+
+    /* オレンジのシェイプ */
+    .shape--right-orange-01 {
+        display: none;
+    }
+
+    /* オレンジのシェイプ */
+    .shape--small-light-orange-01-sp {
+        top: 7%;
+        left: 26%;
+        width: 11%;
+    }
+
+    /* 背景シェイプ */
+    .works__shape--bg-01-sp-top {
+        top: 9%;
+    }
+
+    /* 背景シェイプ */
+    .works__shape--bg-01-sp-bottom {
+        top: 55%;
+    }
+
+    /* 黄色のシェイプ */
+    .shape--light-yellow-01-sp {
+        top: 22%;
+        left: 33%;
+        width: 18%;
+    }
+
+    /* 黄色のシェイプ */
+    .shape--right-yellow-03 {
+        top: 43%;
+        left: 40%;
+        width: 9%;
+    }
+
+    /* 赤色と黄色のシェイプ */
+    .shape--red-yellow-02-sp {
+        top: 63%;
+        left: 39%;
+        width: 11%;
+    }
+
+    /* 赤色と黄色のシェイプ */
+    .shape--red-yellow-09 {
+        top: 101%;
+        left: 43%;
+        width: 7%;
+    }
+
+    /* contactセクション */
+    #contact {
+        padding-top: 15%;
+    }
+
+    /* 背景シェイプ */
+    .contact__shape--orange-wave {
+        display: none;
+    }
+
+    .shape--left-yellow-03 {
+        top: 104%;
+        right: 19%;
+        width: 16%;
+    }
+
+    /* 背景シェイプ */
+    .contact__shape--orange-wave-sp {
+        top: 0;
+    }
+
+    /* contactタイトル */
+    .contact__title {
+        display: none;
+    }
+
+    .contact__title--sp {
+        margin-bottom: 8%;
+        padding-top: 19%;
+        text-align: center;
+    }
+
+    .contact__title--sp img {
+        width: 39%;
+        text-align: center;
+    }
+
+    .contact__form {
+        width: 77%;
+        margin: 0 auto;
+    }
+
+    .form__item {
+        margin-bottom: 8%;
+    }
+
+    .form__item:nth-child(3) {
+        margin-bottom: 4%;
+    }
+
+    label {
+        font-size: min(3.3898vw, 26px);
+        margin-bottom: 3%;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        border-radius: 2.5423vw;
+        height: 3em;
+        font-size: min(3.3898vw, 26px);
+    }
+
+    textarea {
+        height: 7.2em;
+        border-radius: 2.5423vw;
+        font-size: min(3.3898vw, 26px);
+    }
+
+    .contact__notice {
+        margin-bottom: 26%;
+        font-size: min(1.8252vw, 14px);
+    }
+
+    .contact__btn-link {
+        width: 42.0366vw;
+        height: 13.4vw;
+    }
+
+    /* 背景シェイプ */
+    .footer__shape--bg-01 {
+        display: none;
+    }
+
+    /* 背景シェイプ */
+    .footer__shape-bg-sp {
+        bottom: 0px;
+        width: 61%;
     }
 }
