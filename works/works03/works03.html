@@ -14,129 +14,229 @@
 </head>
 
 <body>
+    <!-- header -->
     <header>
-        <div class="header_wrap">
-            <h1 class="nav_logo"><a href="../../index.html"><img src="../../images/logo.png" alt="ロゴ"></a></h1>
-            <ul>
-                <li class="li_about"><a href="../../about/about.html"><img src="../../images/about.png" alt="ABOUT"></a>
-                </li>
-                <li class="li_works"><a href="#otherworks"><img src="../../images/works.png" alt="WORKS"></a></li>
-                <li class="li_contact"><a href="../../index.html#contact"><img src="../../images/contact.png"
-                            alt="CONTACT"></a></li>
-            </ul>
+        <div class="header">
+            <h1 class="header__logo"><a href="/index.html"><img src="../../images/logo@2x.png" alt="ロゴ"></a></h1>
+            <nav class="header__nav__pc">
+                <ul>
+                    <li class="header__nav__item--about"><a href="/about/about.html"><img
+                                src="../../images/about@2x.png" alt="ABOUT"></a>
+                    </li>
+                    <li class="header__nav__item--works"><a href="#works"><img src="../../images/works@2x.png"
+                                alt="WORKS"></a>
+                    </li>
+                    <li class="header__nav__item--contact"><a href="/index.html#contact"><img
+                                src="../../images/contact@2x.png" alt="CONTACT"></a>
+                    </li>
+                </ul>
+            </nav>
+            <!-- スマホ用ナビゲーション -->
+            <nav class="header__nav__sp" id="nav_menu">
+                <ul>
+                    <li class="header__nav__item--about"><a href="/about/about.html#about"><img
+                                src="/images/about_title_sp@2x 22.04.29.png" alt="ABOUT"></a>
+                    </li>
+                    <li class="header__nav__item--works"><a href="#works"><img src="/images/works_title_sp@2x.png"
+                                alt="WORKS"></a></li>
+                    <li class="header__nav__item--contact"><a href="/index.html#contact"><img
+                                src="/images/contact_title_sp@2x.png" alt="CONTACT"></a></li>
+                </ul>
+            </nav>
+            <!-- ハンバーガーメニューボタン -->
+            <div class="sp_btn" id="sp_btn">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <script>
+                const sp_btn = document.querySelector('#sp_btn')
+                const menu = document.querySelector('.header__nav__sp'); // メニューの要素
+                const navLinks = document.querySelectorAll('.header__nav__sp a'); // メニュー内のリンク
+
+                if (sp_btn && menu) {
+                    sp_btn.addEventListener('click', () => {
+                        sp_btn.classList.toggle('is-active');
+                        menu.classList.toggle('is-open'); // メニューの表示・非表示を切り替え
+                    })
+                }
+                // メニュー内のリンクがクリックされたらメニューを閉じる
+                navLinks.forEach(link => {
+                    link.addEventListener('click', () => {
+                        menu.classList.remove('is-open');
+                        sp_btn.classList.remove('is-active');
+                    });
+                });
+            </script>
         </div>
     </header>
     <div class="inner">
         <main>
-            <div class="works_banner">
-                <div class="banner_title_wrap">
-                    <p class="banner_title">ハンバーガーのバナー</p>
-                    <p class="banner_text">Type banner</p>
-                    <div class="about_shape">
-                        <img src="../../images/about_shape.svg" alt="about_shape">
-                    </div>
-                </div>
-                <div class="banner_mockup">
-                    <img src="images/../../images/works03_mockup.png" alt="works03_mockup">
-                </div>
-                <div class="banner_text_wrap">
-                    <div class="works01_shape01"><img src="images/../../images/works01_shape01.svg"
-                            alt="works01_shape01">
-                    </div>
-                    <div class="works01_shape02"><img src="images/../../images/works01_shape02.svg"
-                            alt="works01_shape02">
-                    </div>
-                    <div class="banner_text_inner">
-                        <dl>
-                            <dt>目的</dt>
-                            <dd>サイト誘導と来店促進</dd>
-                        </dl>
-                        <dl>
-                            <dt>デザイン</dt>
-                            <dd>デザイン面では、サイトへの誘導と来店促進が目的だったこと、そしてポップな印象を与えるため、アメコミ風にしました。興味を持ってもらうため、文字とバーガーを枠からはみ出させ角度をつけて自立させました。配色は、食欲増進色であるオレンジや黄色、赤を使用しています。
-                            </dd>
-                        </dl>
-                        <dl>
-                            <dt>制作範囲・期間</dt>
-                            <dd>企画・ワイヤーフレーム・デザイン:14日</dd>
-                        </dl>
-                        <dl>
-                            <dt>使用ツール</dt>
-                            <dd>Photoshop/Illustrator</dd>
-                        </dl>
-                    </div>
+            <!-- intro -->
+            <div class="intro">
+                <h2 class="intro__title">ハンバーガーのバナー<span class="indent"></span>Popver.</h2>
+                <p class="intro__title--textEnglish">Type banner</p>
+                <div class="intro__shape shape shape--left-orange-01">
+                    <img src="/images/shape-left-orange_01.svg" alt="オレンジのシェイプ">
                 </div>
             </div>
-            <section id="otherworks">
-                <div class="works_inner">
-                    <h2 class="works_title"><img src="../images/works_title.png" alt="works_title"></h2>
-                    <div class="works_content_wrap">
-                        <div class="works_content_inner">
-                            <div class="works_content">
-                                <div class="content_img">
-                                    <a href="../works05/works05.html">
-                                        <img src="../../images/banner01.jpg" alt="学割バナー">
-                                    </a>
+            <!-- work-img -->
+            <div class="work-img--banner">
+                <img src="images/../../images/mock-up_works-03@2x.png" alt="works03_mockup">
+            </div>
+            <!-- work-detail -->
+            <div class="work-detail__wrapper">
+                <div class="work-detail__shape shape work-detail__shape--bg-02"><img
+                        src="../images/work-detail_shape-bg_02.svg" alt="背景シェイプ">
+                </div>
+                <div class="work-detail__shape shape shape--left-orange-01-sp"><img
+                        src="/images/shape-left-orange_01.svg" alt="オレンジのシェイプ">
+                </div>
+                <div class="wwork-detail__shape shape shape--red-yellow-03"><img src="../images/shape-red-yellow_03.svg"
+                        alt="赤と黄色のシェイプ">
+                </div>
+                <div class="work-detail__shape shape shape--left-yellow-02"><img
+                        src="../images/shape-left-yellow_02.svg" alt="黄色のシェイプ">
+                </div>
+                <div class="work-detail__shape shape shape--small-red-02"><img src="../images/shape-small-red_02.svg"
+                        alt="赤色のシェイプ">
+                </div>
+                <div class="work-detail__shape shape shape--red-yellow-01"><img src="../images/shape-red-yellow_01.svg"
+                        alt="赤と黄色のシェイプ">
+                </div>
+                <div class="work-detail__shape shape works_shape--bg-01"><img
+                        src="../images/work-detail_shape-bg_01.svg" alt="背景シェイプ">
+                </div>
+                <div class="work-detail__shape shape shape--red-yellow-04"><img src="../images/shape-red-yellow_04.svg"
+                        alt="背景シェイプ">
+                </div>
+                <div class="work-detail__inner">
+                    <dl>
+                        <dt>目的</dt>
+                        <dd>サイト誘導と来店促進</dd>
+                    </dl>
+                    <dl>
+                        <dt>デザイン</dt>
+                        <dd>デザイン面では、サイトへの誘導と来店促進が目的だったこと、そしてポップな印象を与えるため、アメコミ風にしました。興味を持ってもらうため、文字とバーガーを枠からはみ出させ角度をつけて自立させました。配色は、食欲増進色であるオレンジや黄色、赤を使用しています。
+                        </dd>
+                    </dl>
+                    <dl>
+                        <dt>制作範囲・期間</dt>
+                        <dd>企画・ワイヤーフレーム・デザイン:14日</dd>
+                    </dl>
+                    <dl>
+                        <dt>使用ツール</dt>
+                        <dd>Photoshop/Illustrator</dd>
+                    </dl>
+                </div>
+            </div>
+            <!-- works -->
+            <section id="works">
+                <div class="works__shape shape shape--small-light-orange-02"><img
+                        src="../images/shape-small-light-orange_02.svg" alt="オレンジのシェイプ">
+                </div>
+                <div class="works__shape shape works_shape--bg-01-sp"><img src="../images/works_shape-bg_01_sp.svg"
+                        alt="背景シェイプ">
+                </div>
+                <div class="works__shape shape shape--right-yellow-01"><img src="../images/shape-right-yellow_01.svg"
+                        alt="黄色のシェイプ">
+                </div>
+                <div class="works__shape shape shape--light-yellow-01"><img src="../images/shape-light-yellow_01.svg"
+                        alt="黄色のシェイプ">
+                </div>
+                <div class="works__shape shape shape--small-light-yellow-02"><img
+                        src="../images/shape-small-light-yellow_02.svg" alt="黄色のシェイプ">
+                </div>
+                <div class="works__shape shape works_shape--bg-02-sp"><img src="../images/works_shape-bg_02_sp.svg"
+                        alt="背景シェイプ">
+                </div>
+                <div class="works__shape shape shape--red-yellow-05"><img src="../images/shape-red-yellow_05.svg"
+                        alt="黄色と赤のシェイプ">
+                </div>
+                <div class="works__shape shape shape--orange-yellow-02"><img src="../images/shape-orange-yellow_02.svg"
+                        alt="黄色とオレンジのシェイプ">
+                </div>
+                <div class="works__shape shape shape--circle-orange"><img src="../images/shape-circle-orange.svg"
+                        alt="オレンジ色の丸いのシェイプ">
+                </div>
+                <div class="works__shape shape shape--left-yellow-01"><img src="../images/shape-left-yellow_01.svg"
+                        alt="黄色のシェイプ">
+                </div>
+                <div class="works__inner">
+                    <h2 class="works__title"><img src="../images/works_title@2x.png" alt="works_title"></h2>
+                    <h2 class="works__title--sp"><img src="../images/works_title_sp@2x.png" alt="works_title_sp"></h2>
+                    <ul class="works-list__inner">
+                        <li class="works-list__item">
+                            <a href="../works05/works05.html">
+                                <div class="works-list__img">
+                                    <img src="../../images/banner-01@2x-100.jpg" alt="学割バナー">
                                 </div>
-                                <p class="works_text">学割プランのバナー</p>
-                                <p class="works_tool">Photoshop/Illustrator</p>
-                            </div>
-                            <div class="works_content">
-                                <div class="content_img">
-                                    <a href="../works04/works04.html">
-                                        <img src="../../images/banner02.jpg" alt="ハンバーガーのバナー">
-                                    </a>
+                                <h3 class="works-list__title">学割プランのバナー</h3>
+                                <p class="works-list__tool">Photoshop/Illustrator</p>
+                            </a>
+                        </li>
+                        <li class="works-list__item">
+                            <a href="../works04/works04.html">
+                                <div class="works-list__img">
+                                    <img src="../../images/banner-02@2x-100.jpg" alt="ハンバーガーのバナー">
                                 </div>
-                                <p class="works_text">ハンバーガーのバナー</p>
-                                <p class="works_tool">Photoshop/Illustrator</p>
-                            </div>
-                            <div class="works_content">
-                                <div class="content_img">
-                                    <a href="../works02/works02.html">
-                                        <img src="../../images/site01.jpg" alt="コーヒーショップのwebサイト">
-                                    </a>
+                                <h3 class="works-list__title">ハンバーガーのバナー</h3>
+                                <p class="works-list__tool">Photoshop/Illustrator</p>
+                            </a>
+                        </li>
+                        <li class="works-list__item">
+                            <a href="../works02/works02.html">
+                                <div class="works-list__img">
+                                    <img src="../../images/site-02@2x-100.jpg" alt=" コーヒーショップのwebサイト">
                                 </div>
-                                <p class="works_text">コーヒーショップのwebサイト</p>
-                                <p class="works_tool">HTML/CSS/jQuery</p>
-                            </div>
-                            <div class="works_content">
-                                <div class="content_img">
-                                    <a href="../works01/works01.html">
-                                        <img src="../../images/site02.jpg" alt="美容室のwebサイト">
-                                    </a>
+                                <h3 class="works-list__title">コーヒーショップのWebサイト</h3>
+                                <p class="works-list__tool">HTML/CSS/jQuery</p>
+                            </a>
+                        </li>
+                        <li class="works-list__item">
+                            <a href="../works01/works01.html">
+                                <div class="works-list__img">
+                                    <img src="../../images/site-01@2x-100.jpg" alt="美容室のwebサイト">
                                 </div>
-                                <p class="works_text">美容室のwebサイト</p>
-                                <p class="works_tool">Photoshop/Illustrator</p>
-                            </div>
-                        </div>
-                    </div>
+                                <h3 class="works-list__title">美容室のWebサイト</h3>
+                                <p class="works-list__tool">Photoshop/Illustrator</p>
+                            </a>
+                        </li>
+                    </ul>
                 </div>
             </section>
         </main>
     </div>
+    <!-- footer -->
     <footer>
-        <div class="footer_shape_wrap">
-            <div class="footer_shape02"><img src="../../images/footer_shape02.svg" alt="footeシェイプ02"></div>
-        </div>
-        <div class="footer_inner">
-            <div class="footer_button_wrap">
-                <a href="javascript:history.go(-1)" class="footer_button"><img src="../../images/back_to_page.png"
+        <div class="footer">
+            <div class="footer__btn">
+                <a href="javascript:history.go(-1)" class="footer__btn-link"><img src="../../images/back-to-page@2x.png"
                         alt="back_to_page"></a>
             </div>
             <a href="#" class="arrow-left"></a>
-            <div class="footer_nav">
+            <div class="footer__nav">
                 <ul>
-                    <li><a href="../../about/about.html"><img src="../../images/about.png" alt="ABOUT"></a></li>
-                    <li><a href="#otherworks"><img src="../../images/works.png" alt="WORKS"></a></li>
-                    <li><a href="../../index.html#contact"><img src="../../images/contact.png" alt="CONTACT"></a></li>
+                    <li class="footer__nav__item--about"><a href="../../about/about.html"><img
+                                src="../../images/about@2x.png" alt="ABOUT"></a></li>
+                    <li class="footer__nav__item--works"><a href="#works"><img src="../../images/works@2x.png"
+                                alt="WORKS"></a>
+                    </li>
+                    <li class="footer__nav__item--contact"><a href="../../index.html#contact"><img
+                                src="../../images/contact@2x.png" alt="CONTACT"></a></li>
                 </ul>
             </div>
-            <p class="footer_copy"><img src="../../images/footer_copy.png" alt="コピー"></p>
+            <p class="footer__copy"><img src="../../images/footer_copy@2x.png" alt="コピー"></p>
+        </div>
+        <div class="footer__shape-area">
+            <div class="works__shape shape footer__shape--bg-01"><img src="../../images/footer_shape-bg_01.svg"
+                    alt="背景シェイプ"></div>
         </div>
     </footer>
+    <!-- top -->
     <div class="top">
         <a href="#">
-            <img src="../../images/top.png" alt="top">
+            <img src="../../images/top@2x.png" alt="top">
         </a>
     </div>
 </body>
