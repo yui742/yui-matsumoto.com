@@ -1,469 +1,303 @@
 @charset "utf-8";
-
-/* .works_website {
-} */
-
-.website_title_wrap {
-    position: relative;
-    max-width: 1100px;
-    margin-bottom: 20%;
-    padding-top: 82px;
-    padding-left: 9%;
-    /* padding-left: 130px; */
-    overflow: visible;
-}
-
-.website_title {
-    /* font-size: 70px; */
-    font-size: 6.1244vw;
-    line-height: 1.4;
-}
-
-.website_text {
-    font-size: 1.6vw;
-}
-
-.about_shape {
+/* 見出し */
+/* オレンジのシェイプ */
+.shape--left-orange-01 {
     display: inline;
-    position: absolute;
     top: 44%;
-    /* top: -125px; */
     left: 95%;
-    /* left: 912px; */
     width: 20%;
     transform: translateX(-50%);
 }
 
-.about_shape img {
-    margin-right: 5%;
-}
-
-.website_desktop {
-    margin-bottom: 25%;
-    text-align: center;
-}
-
-.website_desktop img {
-    width: 77%;
-}
-.website_text_wrap {
-    position: relative;
-}
-
-.website_text_inner {
-    display: flex;
-    flex-direction: column;
-    gap: 48px;
-    margin: 0 auto;
-    padding: 0px 9%;
-    max-width: 1080px;
-    font-size: 2rem;
-}
-
-.website_text_inner dl {
-    display: flex;
-    flex-wrap: wrap;
-}
-
-.website_text_inner dt {
-    width: 30%;
-}
-
-.website_text_inner dd {
-    width: 70%;
-    line-height: 1.8;
-}
-
-.works_text_bg_shape {
-    position: absolute;
-    /* top: 365px; */
+/* テーブル */
+/* 背景シェイプ */
+.work-detail__shape--bg-01 {
     top: 37%;
-    z-index: -1;
 }
 
-.works_text_redyellow_shape {
-    position: absolute;
-    /* top: 575px; */
+/* 赤と黄色のシェイプ */
+.shape--red-yellow-04 {
     top: 80%;
-    /* left: 100px; */
     left: 7%;
     width: 5%;
 }
 
-.website_designcomp_wrap {
-    position: relative;
-    margin-top: 4%;
-}
-
-.website_designcomp_inner {
-    text-align: center;
-}
-
-.designcomp img {
-    width: 60%;
-}
-
-.works_text_yellow_shape_sp01 {
-    position: absolute;
-    top: 15%;
+/* 黄色のシェイプ */
+.shape--left-yellow-02 {
+    top: 13%;
     right: 5%;
-    z-index: -1;
     width: 16%;
 }
 
-.works_designcomp_redyellow_shape {
-    position: absolute;
+/* デザインカンプ */
+/* オレンジと黄色のシェイプ */
+.shape--orange-yellow-03 {
+    top: 77%;
+    left: 1%;
+    width: 16%;
+}
+
+/* 赤と黄色のシェイプ */
+.shape--red-yellow-01 {
     top: 35%;
     left: 6%;
-    z-index: -1;
     width: 8%;
 }
 
-.works_designcomp_bg_shape {
-    position: absolute;
-    top: 51%;
-    z-index: -1;
+/* 背景シェイプ */
+.design-comp__shape--bg-02 {
+    top: 53%;
 }
 
-.works_designcomp_orange_shape {
-    position: absolute;
+.design-comp__shape-bg {
+    top: 52%;
+}
+
+/* オレンジのシェイプ */
+.shape--orange {
     top: 56%;
     right: 3%;
-    z-index: -1;
     width: 26%;
 }
 
-.works_designcomp_orangeyellow_shape {
-    position: absolute;
-    top: 75%;
-    left: 1%;
-    z-index: -1;
-    width: 17%;
-}
-
-.works_designcomp_yellow_circle {
-    position: absolute;
-    top: 84%;
+/* 黄色の丸いシェイプ */
+.shape--circle-yellow {
+    top: 86%;
     right: 21%;
-    z-index: -1;
 }
 
-.works_otherworks_yellow_shape {
-    position: absolute;
-    top: 16%;
+/* worksセクション */
+/* 黄色のシェイプ */
+.shape--right-yellow-01 {
+    top: 23%;
     right: 34%;
-    z-index: -1;
-    width: 12%;
-}
-
-#otherworks {
-    position: relative;
-    padding-top: 22%;
-}
-
-.otherworks_inner {
-    padding: 0 11%;
-}
-
-.works_title {
-    width: 34%;
-    margin: 0 auto 4%;
-}
-
-.works_content_wrap {
-    max-width: 1100px;
-    margin: 0 auto;
-}
-
-.works_content_inner {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 6rem 7%;
-}
-
-.works_content {
-    width: 28%;
-}
-
-@media screen and (max-width: 1200px) {
-    .about_shape {
-        left: 85%;
-    }
-}
-
-@media screen and (max-width: 1140px) {
+    width: 11%;
 }
 
 @media screen and (min-width: 767px) {
-    .works_otherworks_bg_shape01_sp {
+    /* テーブル */
+    /* オレンジのシェイプ */
+    .shape--left-orange-01-sp {
         display: none;
     }
 
-    .about_shape_sp {
-        display: none;
-    }
-    .works_text_yellow_shape_sp {
-        display: none;
-    }
-
-    .works_text_red_shape_sp {
+    /* 小さい赤いシェイプ */
+    .shape--small-red-01-sp {
         display: none;
     }
 
-    .works_designcomp_red_circle_sp {
+    /* デザインカンプ */
+    /* 黄色のシェイプ */
+    .shape--left-yellow-02-sp {
         display: none;
     }
 
-    .works_title_sp {
+    /* 赤い丸いシェイプ */
+    .shape--circle-red-01-sp {
         display: none;
     }
 
-    .works_otherworks_orange_shape_sp {
+    .design-comp__shape--bg-01-sp {
         display: none;
     }
 
-    .works_otherworks_yellow_shape01_sp {
+    /* 背景シェイプ */
+    .design-comp__shape--bg-02 {
         display: none;
     }
 
-    .works_otherworks_yellow_shape02_sp {
+    /* worksセクション */
+    /* 小さくて薄いオレンジのシェイプ */
+    .shape--small-light-orange-01-sp {
         display: none;
     }
 
-    .works_otherworks_bg_shape02_sp {
+    /* 背景シェイプ */
+    .works__shape--bg-01-sp-top {
         display: none;
     }
 
-    .works_otherworks_redyellow_shape_sp {
+    /* 背景シェイプ */
+    .works__shape--bg-01-sp {
         display: none;
     }
 
-    .works__otherworks_orangeyellow_shape {
+    /* 薄いオレンジのシェイプ */
+    .shape--light-yellow-01-sp {
         display: none;
     }
 
-    .works__otherworks_orangeyellow_shape_sp {
+    /* 小さくて薄い黄色のシェイプ */
+    .shape--small-light-yellow-01-sp {
+        display: none;
+    }
+
+    /* 背景シェイプ */
+    .works__shape--bg-01-sp-bottom {
+        display: none;
+    }
+
+    /* 赤と黄色のシェイプ */
+    .shape--red-yellow-02-sp {
+        display: none;
+    }
+
+    /* オレンジと黄色のシェイプ */
+    .shape--orange-yellow-02-sp {
         display: none;
     }
 }
 
 @media screen and (max-width: 767px) {
-    .website_title_wrap {
-        padding-top: 74px;
+    /* テーブル */
+    /* 背景シェイプ */
+    .work-detail__shape--bg-01 {
+        top: -4%;
     }
 
-    .about_shape {
-        display: none;
-    }
-
-    .about_shape_sp {
+    /* オレンジのシェイプ */
+    .shape--left-orange-01-sp {
         display: inline;
-        position: absolute;
-        top: -11%;
-        left: 72%;
-        z-index: -1;
+        top: -5%;
+        right: 8%;
         width: 19%;
     }
 
-    .works_text_bg_shape {
-        top: -9%;
-    }
-
-    .works_text_redyellow_shape {
-        top: 54%;
+    /* 赤と黄色のシェイプ */
+    .shape--red-yellow-04 {
+        top: 28%;
         left: 5%;
         width: 5%;
     }
 
-    .works_text_yellow_shape_sp01 {
-        top: 14%;
-        right: 8%;
-        z-index: -1;
-        width: 16%;
-    }
-
-    .works_text_yellow_shape_sp {
+    /* 黄色のシェイプ */
+    .work-detail__wrapper .shape--left-yellow-02-sp {
         display: inline;
-        position: absolute;
-        top: 113%;
+        top: 56%;
         left: 71%;
         width: 20%;
     }
 
-    .works_text_red_shape_sp {
+    /* 小さくて赤いシェイプ */
+    .shape--small-red-01-sp {
         display: inline;
-        position: absolute;
-        top: 92%;
-        left: 5%;
-        width: 5%;
+        top: 91%;
+        left: 7%;
+        width: 6%;
     }
 
-    .works_designcomp_redyellow_shape {
-        display: none;
-    }
-
-    .works_designcomp_orange_shape {
-        display: none;
-    }
-
-    .works01_shape07 {
-        display: none;
-    }
-
-    .works_designcomp_yellow_circle {
-        display: none;
-    }
-
-    .works_designcomp_orangeyellow_shape_sp {
-        display: inline;
-        position: absolute;
-        top: 28%;
-        left: 11%;
-        z-index: -1;
-        width: 19%;
-    }
-
-    .works_designcomp_orangeyellow_shape {
-        position: absolute;
-        top: 24%;
-        left: 5%;
-        z-index: -1;
-        width: 20%;
-    }
-
-    .works_designcomp_red_circle_sp {
-        position: absolute;
-        top: 62%;
-        left: 5%;
-        z-index: -1;
-        width: 7%;
-    }
-
-    .website_text_inner {
-        font-size: 1.3rem;
-    }
-
-    .website_text_inner dl {
-        gap: 9px;
-        flex-direction: column;
-    }
-
-    .website_text_inner dt,
-    .website_text_inner dd {
-        width: 100%;
-    }
-
-    .works_designcomp_bg_shape {
-        top: 19%;
-    }
-
-    .works_otherworks_yellow_shape {
-        display: none;
-    }
-
-    .works_otherworks_bg_shape01_sp {
-        position: absolute;
-        top: 9%;
-        z-index: -1;
-    }
-
-    .website_designcomp_wrap {
+    /* デザインカンプ */
+    .design-comp__wrapper {
         margin-top: 18%;
     }
 
-    .designcomp img {
-        width: 91%;
+    /* 黄色のシェイプ */
+    .design-comp__wrapper .shape--left-yellow-02 {
+        top: 12%;
+        right: 8%;
+        width: 16%;
     }
 
-    .works_otherworks_orange_shape_sp {
-        position: absolute;
-        top: 10%;
-        left: 29%;
-        z-index: -1;
-        width: 11%;
+    /* オレンジと黄色のシェイプ */
+    .shape--orange-yellow-01 {
+        top: 24%;
+        left: 5%;
+        width: 20%;
     }
 
-    .works_otherworks_yellow_shape01_sp {
-        position: absolute;
-        top: 28%;
-        left: 34%;
-        z-index: -1;
-        width: 17%;
+    /* 丸い赤色のシェイプ */
+    .shape--circle-red-01-sp {
+        top: 62%;
+        left: 5%;
+        width: 7%;
     }
 
-    .works_otherworks_yellow_shape02_sp {
-        position: absolute;
-        top: 54%;
-        left: 43%;
-        z-index: -1;
-        width: 9%;
-    }
-
-    .works_otherworks_bg_shape02_sp {
-        position: absolute;
-        top: 65%;
-        z-index: -1;
-    }
-
-    .works_otherworks_redyellow_shape_sp {
-        position: absolute;
-        top: 75%;
-        left: 33%;
-        z-index: -1;
-        width: 11%;
-    }
-
-    .works__otherworks_orangeyellow_shape_sp {
-        position: absolute;
-        top: 100%;
-        left: 35%;
-        z-index: -1;
-        width: 23%;
-    }
-
-    #otherworks {
-        padding-top: 17%;
-    }
-
-    .works_inner {
-        padding: 0 12%;
-    }
-
-    .works_title {
+    /* 赤と黄色のシェイプ */
+    .shape--red-yellow-01 {
         display: none;
     }
 
-    .works_title_sp {
-        padding-bottom: 3%;
-        text-align: center;
+    /* 背景シェイプ */
+    .design-comp__shape--bg-02 {
+        display: none;
     }
 
-    .works_title_sp img {
-        width: 44%;
+    /* 背景シェイプ */
+    .design-comp__shape--bg-01-sp {
+        top: 17%;
     }
 
-    .works_content_inner {
-        flex-direction: column;
-        gap: 15rem;
-        margin: 0 auto;
-        max-width: 590px;
+    .design-comp__shape-bg {
+        display: none;
     }
 
-    .works_content {
-        width: 100%;
+    /* オレンジのシェイプ */
+    .shape--orange {
+        display: none;
     }
 
-    .content_img {
-        margin-bottom: 5%;
+    /* 丸い赤色のシェイプ */
+    .shape--circle-yellow {
+        display: none;
     }
 
-    .works_text {
-        margin-bottom: 2%;
-        font-size: 2.6rem;
+    /* 赤色とオレンジのシェイプ */
+    .shape--orange-yellow-03 {
+        display: inline;
+        top: 22%;
+        left: 6%;
+        width: 19%;
     }
 
-    .works_tool {
-        font-size: 1rem;
+    /* worksセクション */
+    /* 黄色のシェイプ */
+    .shape--right-yellow-01 {
+        display: none;
+    }
+
+    /* 小さくて薄いオレンジのシェイプ */
+    .shape--small-light-orange-01-sp {
+        top: 12%;
+        left: 29%;
+        width: 11%;
+    }
+
+    /* 背景シェイプ */
+    .works__shape--bg-01-sp-top {
+        top: 12%;
+    }
+
+    /* 薄い黄色のシェイプ */
+    .shape--light-yellow-01-sp {
+        top: 30%;
+        left: 34%;
+        width: 17%;
+    }
+
+    /* 小さくて薄い黄色のシェイプ */
+    .shape--small-light-yellow-01-sp {
+        top: 55%;
+        left: 43%;
+        width: 9%;
+    }
+
+    /* 背景シェイプ */
+    .works__shape--bg-01-sp-bottom {
+        top: 66%;
+        z-index: -1;
+    }
+
+    /* 赤と黄色のシェイプ */
+    .shape--red-yellow-02-sp {
+        top: 76%;
+        left: 33%;
+        width: 11%;
+    }
+
+    /* オレンジと黄色のシェイプ */
+    .shape--orange-yellow-02-sp {
+        top: 100%;
+        left: 35%;
+        width: 23%;
     }
 }
