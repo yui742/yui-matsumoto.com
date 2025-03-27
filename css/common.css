@@ -399,7 +399,7 @@ footer {
     .sp_btn {
         --opacity: 1;
         --rotate: 0;
-        --translateY: clamp(-0.5rem, 2vw, 1.5rem);
+        --translateY: clamp(0.1rem, 2vw, 1.5rem);
         display: grid;
         place-items: center;
         position: absolute;
