@@ -56,8 +56,8 @@
 /* オレンジのシェイプ */
 .shape--orange-01 {
     top: 56%;
-    right: 3%;
-    width: 26%;
+    right: 10%;
+    width: 18%;
 }
 
 /* 黄色の丸いシェイプ */
@@ -69,7 +69,7 @@
 /* worksセクション */
 /* 黄色のシェイプ */
 .shape--right-yellow-01 {
-    top: 23%;
+    top: -3%;
     right: 34%;
     width: 11%;
 }
