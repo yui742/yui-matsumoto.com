@@ -54,7 +54,7 @@
 }
 
 /* オレンジのシェイプ */
-.shape--orange {
+.shape--orange-01 {
     top: 56%;
     right: 3%;
     width: 26%;
@@ -232,7 +232,7 @@
     }
 
     /* オレンジのシェイプ */
-    .shape--orange {
+    .shape--orange-01 {
         display: none;
     }
 
