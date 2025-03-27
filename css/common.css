@@ -487,6 +487,10 @@ footer {
         text-decoration: none;
     }
 
+    .header__nav__sp .header__nav__item--home img {
+        width: 40%;
+    }
+
     .header__nav__sp .header__nav__item--about img {
         width: 40%;
     }
