@@ -478,7 +478,7 @@ footer {
     }
 
     .header__nav__sp li {
-        margin: 20px 0;
+        margin: 8vw auto;
     }
 
     .header__nav__sp a {
@@ -488,19 +488,19 @@ footer {
     }
 
     .header__nav__sp .header__nav__item--home img {
-        width: 40%;
+        width: 28%;
     }
 
     .header__nav__sp .header__nav__item--about img {
-        width: 40%;
+        width: 30%;
     }
 
     .header__nav__sp .header__nav__item--works img {
-        width: 43%;
+        width: 34%;
     }
 
     .header__nav__sp .header__nav__item--contact img {
-        width: 51%;
+        width: 39%;
     }
 
     /* ヘッダー */
