@@ -399,7 +399,7 @@ footer {
     .sp_btn {
         --opacity: 1;
         --rotate: 0;
-        --translateY: 1.5rem;
+        --translateY: clamp(-0.5rem, 2vw, 1.5rem);
         display: grid;
         place-items: center;
         position: absolute;
@@ -408,7 +408,7 @@ footer {
         z-index: 2;
         width: 15.9268vw;
         height: 14vw;
-        border-bottom-left-radius: 18px;
+        border-bottom-left-radius: 3.3177vw; /* 18px */
         background-color: #321d0b;
         cursor: pointer;
     }
