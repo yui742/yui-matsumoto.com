@@ -479,7 +479,11 @@ footer {
     }
 
     .header__nav__sp li {
-        margin: 8vw auto;
+        margin-bottom: 8vw;
+    }
+
+    .header__nav__sp li:last-child {
+        margin-bottom: none;
     }
 
     .header__nav__sp a {
