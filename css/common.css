@@ -419,7 +419,6 @@ footer {
         border-bottom-left-radius: 3.3177vw; /* 18px */
         background-color: #321d0b;
         cursor: pointer;
-        position: fixed;
     }
 
     /* .is-activeクラスが追加されたときのスタイル */
