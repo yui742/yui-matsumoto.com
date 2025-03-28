@@ -481,7 +481,6 @@ footer {
     /* メニュー項目のスタイル */
     .header__nav__sp ul {
         list-style: none;
-        padding-top: 37%;
         text-align: center;
     }
 
