@@ -80,6 +80,13 @@ html {
 }
 
 /* ヘッダー */
+header {
+    z-index: 5;
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
 .header {
     display: flex;
     justify-content: space-between;
@@ -87,6 +94,7 @@ html {
     margin: 0 auto;
     max-width: 1100px;
     padding: min(2%, 21px) 11%;
+    background-color: #f3e9cf;
 }
 
 .header__logo img {
