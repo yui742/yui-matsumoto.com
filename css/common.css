@@ -368,10 +368,10 @@ footer {
 .top {
     position: fixed;
     right: 4%;
-    bottom: 6%;
+    bottom: 2%;
     z-index: 1;
-    width: 151px;
-    height: 6%;
+    width: clamp(100px, 17vw, 151px);
+    height: 20%;
     padding: 10px 15px;
 }
 
@@ -710,10 +710,10 @@ footer {
 
     /* topボタン */
     .top {
-        right: 4%;
-        bottom: 6%;
+        right: 2.66667vw;
+        bottom: 15.6vw;
         z-index: 1;
-        width: 22%;
-        height: 9%;
+        width: 23.84615vw;
+        height: 23.84615vw;
     }
 }
