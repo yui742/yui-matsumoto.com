@@ -39,6 +39,7 @@ a {
 
 a:hover {
     opacity: 0.5;
+    opacity: 1 !important; /* 透過効果を無効化 */
 }
 
 ul {
@@ -101,6 +102,11 @@ header {
 .header__logo img {
     display: block;
     width: 50%;
+    filter: brightness(1); /* 初期状態 */
+}
+
+.header__logo:hover img {
+    animation: brighten-then-reset 0.6s ease forwards;
 }
 
 .header__nav__pc ul {
@@ -373,6 +379,26 @@ footer {
     width: clamp(100px, 17vw, 151px);
     height: 20%;
     padding: 10px 15px;
+}
+.header__nav__pc li img {
+    display: block;
+    filter: brightness(1); /* 初期状態 */
+}
+
+.header__nav__pc li:hover img {
+    animation: brighten-then-reset 0.6s ease forwards;
+}
+
+@keyframes brighten-then-reset {
+    0% {
+        filter: brightness(1); /* 初期状態 */
+    }
+    50% {
+        filter: brightness(2.7); /* 1秒後に明るく */
+    }
+    100% {
+        filter: brightness(1); /* その後元に戻る */
+    }
 }
 
 @media screen and (max-width: 1200px) {
