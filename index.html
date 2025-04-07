@@ -95,7 +95,7 @@
                     formData.append("entry.789012", document.getElementById("msg").value);
 
                     // Googleフォームの送信先URLにデータを送信
-                    fetch("https://docs.google.com/forms/d/e/1FAIpQLSfuDb5xpiKPvjLfLK6kC8vLrDmPezEPTx-0VBJGZOtnk2HtdQ/viewform?usp=sf_link", {
+                    fetch("https://docs.google.com/forms/d/e/1FAIpQLSeNHGqrecizdJ0vBusR73cH3Fv8Gv5HT1SJUpop43KeQFSwvA/formResponse", {
                         method: "POST",
                         body: formData
                     })
@@ -310,8 +310,8 @@
                     </div>
                     <h2 class="contact__title"><img src="images/contact_title@2x.webp" alt="contactタイトル"></h2>
                     <h2 class="contact__title--sp"><img src="images/contact_title_sp@2x.webp" alt="contactタイトル"></h2>
-                    <form class="contact__form">
-                        <div id="form__item">
+                    <form class="contact__form" id="contactForm">
+                        <div class="form__item">
                             <label for="name">お名前</label>
                             <input id="name" type="text" name="name" placeholder="山田 太郎">
                         </div>
@@ -325,7 +325,9 @@
                         </div>
                         <p class="contact__notice">確認送信ボタンをクリックした後、入力確認画面が表示されずにお問い合わせ内容が送信されます。ご注意ください。</p>
                         <div class="contact__btn">
-                            <a class="contact__btn-link"><img src="images/send-mail@2x.webp" alt="read_more"></a>
+                            <button class="contact__btn-link" type="submit">
+                                <a class="contact__btn-link"><img src="images/send-mail@2x.webp" alt="read_more"></a>
+                            </button>
                         </div>
                         <a href="#" class="arrow-right"></a>
                     </form>
