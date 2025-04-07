@@ -62,7 +62,6 @@
                     sp_btn.addEventListener('click', () => {
                         sp_btn.classList.toggle('is-active');
                         menu.classList.toggle('is-open'); // メニューの表示・非表示を切り替え
-
                         // メニューが開いたらスクロールを無効にする
                         if (menu.classList.contains('is-open')) {
                             body.style.overflow = 'hidden';
@@ -71,7 +70,6 @@
                         }
                     })
                 }
-
                 // メニュー内のリンクがクリックされたときスクロールを元に戻す
                 navLinks.forEach(link => {
                     link.addEventListener('click', () => {
@@ -80,12 +78,28 @@
                         body.style.overflow = ''; // 元に戻す
                     });
                 });
-
                 // メニュー内のリンクがクリックされたらメニューを閉じる
                 navLinks.forEach(link => {
                     link.addEventListener('click', () => {
                         menu.classList.remove('is-open');
                         sp_btn.classList.remove('is-active');
+                    });
+                });
+                // topボタン押すとページ時最上部にスクロール
+                document.addEventListener("DOMContentLoaded", function () {
+                    const topButton = document.querySelector(".top a");
+
+                    topButton.addEventListener("click", function (event) {
+                        event.preventDefault(); // デフォルトの動作を防ぐ
+
+                        const scrollToTop = () => {
+                            const position = window.scrollY;
+                            if (position > 0) {
+                                window.scrollBy(0, -position / 7); // スクロール速度調整
+                                requestAnimationFrame(scrollToTop);
+                            }
+                        };
+                        scrollToTop();
                     });
                 });
             </script>

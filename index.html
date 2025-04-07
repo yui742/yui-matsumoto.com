@@ -81,9 +81,34 @@
                                 requestAnimationFrame(scrollToTop);
                             }
                         };
-
                         scrollToTop();
                     });
+                });
+                // Googleフォームの送信スクリプト
+                document.getElementById("form__item").addEventListener("submit", function (event) {
+                    event.preventDefault(); // フォームのデフォルト送信を無効にする
+
+                    // フォームデータを収集
+                    var formData = new FormData();
+                    formData.append("entry.123456", document.getElementById("name").value);
+                    formData.append("entry.654321", document.getElementById("email").value);
+                    formData.append("entry.789012", document.getElementById("msg").value);
+
+                    // Googleフォームの送信先URLにデータを送信
+                    fetch("https://docs.google.com/forms/d/e/1FAIpQLSfuDb5xpiKPvjLfLK6kC8vLrDmPezEPTx-0VBJGZOtnk2HtdQ/viewform?usp=sf_link", {
+                        method: "POST",
+                        body: formData
+                    })
+                        .then(response => {
+                            if (response.ok) {
+                                alert("送信が完了しました！");
+                            } else {
+                                alert("送信に失敗しました。");
+                            }
+                        })
+                        .catch(error => {
+                            alert("エラーが発生しました。");
+                        });
                 });
             </script>
         </div>
@@ -286,7 +311,7 @@
                     <h2 class="contact__title"><img src="images/contact_title@2x.webp" alt="contactタイトル"></h2>
                     <h2 class="contact__title--sp"><img src="images/contact_title_sp@2x.webp" alt="contactタイトル"></h2>
                     <form class="contact__form">
-                        <div class="form__item">
+                        <div id="form__item">
                             <label for="name">お名前</label>
                             <input id="name" type="text" name="name" placeholder="山田 太郎">
                         </div>
