@@ -66,6 +66,10 @@
     right: 21%;
 }
 
+.design-comp__img img {
+    width: 51%;
+}
+
 /* worksセクション */
 /* 黄色のシェイプ */
 .shape--right-yellow-01 {
@@ -87,6 +91,10 @@
     }
 
     /* デザインカンプ */
+    .design-comp__img--sp {
+        display: none;
+    }
+
     /* 黄色のシェイプ */
     .shape--left-yellow-02-sp {
         display: none;
@@ -247,6 +255,14 @@
         top: 22%;
         left: 6%;
         width: 19%;
+    }
+
+    .design-comp__img {
+        display: none;
+    }
+
+    .design-comp__img--sp img {
+        width: 77%;
     }
 
     /* worksセクション */
