@@ -155,6 +155,10 @@
         display: none;
     }
 
+    .shape--small-red-01-botomm {
+        display: none;
+    }
+
     /* 赤丸のシェイプ */
     .shape--circle-red-01-right {
         display: none;
@@ -273,7 +277,7 @@
 
     /* 黄色のシェイプ */
     .shape--left-yellow-05-top {
-        top: 7%;
+        top: 25%;
         right: 8%;
         width: 19%;
     }
@@ -287,12 +291,12 @@
 
     /* 背景シェイプ */
     .design-comp__shape--bg-01-sp {
-        top: 18%;
+        top: 70%;
     }
 
     /* 赤色のシェイプ */
-    .shape--small-red-01-bottom {
-        top: 26%;
+    .shape--small-red-01-botomm {
+        top: 103%;
         left: 5%;
         width: 6%;
     }
@@ -346,8 +350,8 @@
 
     /* オレンジと黄色のシェイプ */
     .shape--orange-yellow-01 {
-        top: 69%;
-        right: 3%;
+        top: 50%;
+        left: 3%;
         width: 19%;
     }
 
