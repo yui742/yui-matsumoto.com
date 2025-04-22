@@ -401,6 +401,11 @@ textarea {
         display: none;
     }
 
+    /* skillタイトル */
+    .skill__title--sp {
+        display: none;
+    }
+
     /* worksセクション */
     /* オレンジのシェイプ */
     .shape--small-light-orange-01-sp {
@@ -593,8 +598,15 @@ textarea {
         width: 5%;
     }
 
-    .skill_title {
-        top: 37%;
+    .skill__title {
+        display: none;
+    }
+
+    .skill__title--sp {
+        position: absolute;
+        top: 5%;
+        right: 6%;
+        width: 11%;
     }
 
     .skill__list {
@@ -815,5 +827,15 @@ textarea {
     .footer__shape-bg-sp {
         bottom: 0px;
         width: 61%;
+    }
+}
+
+@media screen and (max-width: 350px) {
+    .form__item {
+        margin-bottom: 6%;
+    }
+
+    .contact__notice {
+        margin-bottom: 24%;
     }
 }
