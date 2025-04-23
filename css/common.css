@@ -178,7 +178,7 @@ header {
 }
 
 /* worksページテーブル */
-.work-detail__wrapper {
+.work-detail {
     position: relative;
 }
 
@@ -210,7 +210,7 @@ header {
 }
 
 /* デザインカンプ */
-.design-comp__wrapper {
+.design-comp {
     position: relative;
     margin-top: 9%;
 }
@@ -612,25 +612,25 @@ footer {
     }
 
     /* worksページテーブル */
-    .work-detail__wrapper .work-detail__inner {
+    .work-detail .work-detail__inner {
         font-size: 3.3898vw;
         gap: 45px;
         padding: 0px 11%;
         max-width: 590px;
     }
 
-    .work-detail__wrapper .work-detail__inner dl {
+    .work-detail .work-detail__inner dl {
         gap: 13px;
         flex-direction: column;
     }
 
-    .work-detail__wrapper .work-detail__inner dt,
-    .work-detail__wrapper .work-detail__inner dd {
+    .work-detail .work-detail__inner dt,
+    .work-detail .work-detail__inner dd {
         width: 100%;
     }
 
     /* worksページデザインカンプ */
-    main .design-comp__wrapper {
+    main .design-comp {
         margin-top: 24%;
     }
 
