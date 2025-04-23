@@ -234,8 +234,8 @@ header {
 /* worksセクション */
 #works {
     position: relative;
-    margin-top: 21%;
-    padding-top: 7%;
+    margin-top: 17%;
+    padding-top: 11%;
 }
 
 .works__inner {
@@ -648,8 +648,9 @@ footer {
     }
 
     /* worksセクション */
-    main #works__wrapper {
+    #works {
         padding-top: 26%;
+        margin-top: 0;
     }
 
     .works__title {
