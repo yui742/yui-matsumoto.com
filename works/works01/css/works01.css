@@ -261,6 +261,10 @@
         display: none;
     }
 
+    .design-comp__img--sp {
+        width: 100%;
+    }
+
     .design-comp__img--sp img {
         width: 77%;
     }
