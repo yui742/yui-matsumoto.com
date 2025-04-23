@@ -221,8 +221,8 @@
 /* worksセクション */
 #works {
     position: relative;
-    margin-top: 19%;
-    padding-top: 8%;
+    margin-top: 17%;
+    padding-top: 10%;
 }
 
 /* 黄色のシェイプ */
@@ -682,7 +682,8 @@ textarea {
 
     /* worksセクション */
     #works {
-        padding-top: 13%;
+        margin-top: 4%;
+        padding-top: 30%;
     }
 
     /* 黄色のシェイプ */
@@ -697,38 +698,38 @@ textarea {
 
     /* オレンジのシェイプ */
     .shape--small-light-orange-01-sp {
-        top: 7%;
+        top: 11%;
         left: 26%;
         width: 11%;
     }
 
     /* 背景シェイプ */
     .works__shape--bg-01-sp-top {
-        top: 9%;
+        top: 13%;
     }
 
     /* 背景シェイプ */
     .works__shape--bg-01-sp-bottom {
-        top: 55%;
+        top: 56%;
     }
 
     /* 黄色のシェイプ */
     .shape--light-yellow-01-sp {
-        top: 22%;
+        top: 25%;
         left: 33%;
         width: 18%;
     }
 
     /* 黄色のシェイプ */
     .shape--right-yellow-03 {
-        top: 43%;
+        top: 46%;
         left: 40%;
         width: 9%;
     }
 
     /* 赤色と黄色のシェイプ */
     .shape--red-yellow-02-sp {
-        top: 63%;
+        top: 64%;
         left: 39%;
         width: 11%;
     }
