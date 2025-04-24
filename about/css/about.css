@@ -102,13 +102,13 @@
 }
 
 .strange__subtitle {
-    margin-bottom: 0.7vw;
+    margin-bottom: 2%;
     font-size: min(3.5138vw, 48px);
     line-height: 1em;
 }
 
 .strange__subtitle--right {
-    margin-bottom: 0.7vw;
+    margin-bottom: 2%;
     font-size: min(3.5138vw, 48px);
     line-height: 1em;
     text-align: right;
