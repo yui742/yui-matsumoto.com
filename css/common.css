@@ -356,7 +356,7 @@ footer {
 .footer__nav ul {
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 6.527vw;
 }
 
 /* ホバー時ナビゲーションボタンの明度が低くなる */
