@@ -233,19 +233,19 @@
     .shape--circle-red-02 {
         top: 52%;
         left: 4%;
-        width: 19%;
+        width: 5%;
     }
 
     /* 黄色のシェイプ */
-    .work-detail__wrapper .shape--left-yellow-02 {
-        top: 106%;
+    .work-detail .shape--left-yellow-02 {
+        top: 107%;
         right: 9%;
         width: 19%;
     }
 
     /* デザインカンプ */
     /* 黄色のシェイプ */
-    .design-comp__wrapper .shape--left-yellow-02 {
+    .design-comp .shape--left-yellow-02 {
         display: none;
     }
 
