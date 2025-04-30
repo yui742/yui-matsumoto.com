@@ -62,6 +62,16 @@ body {
     background-color: #f3e9cf;
 }
 
+body.no-scroll {
+    overflow: hidden;
+    overscroll-behavior: none;
+    scrollbar-width: none; /* Firefox用 */
+}
+
+body.no-scroll::-webkit-scrollbar {
+    display: none; /* Chrome, Safari用 */
+}
+
 html {
     font-size: 62.5%;
 }

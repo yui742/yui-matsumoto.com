@@ -64,25 +64,18 @@
                         menu.classList.toggle('is-open'); // メニューの表示・非表示を切り替え
                         // メニューが開いたらスクロールを無効にする
                         if (menu.classList.contains('is-open')) {
-                            body.style.overflow = 'hidden';
+                            document.body.classList.add('no-scroll');
                         } else {
-                            body.style.overflow = ''; // 元に戻す
+                            document.body.classList.remove('no-scroll');
                         }
                     })
                 }
-                // メニュー内のリンクがクリックされたときスクロールを元に戻す
-                navLinks.forEach(link => {
-                    link.addEventListener('click', () => {
-                        menu.classList.remove('is-open');
-                        sp_btn.classList.remove('is-active');
-                        body.style.overflow = ''; // 元に戻す
-                    });
-                });
                 // メニュー内のリンクがクリックされたらメニューを閉じる
                 navLinks.forEach(link => {
                     link.addEventListener('click', () => {
                         menu.classList.remove('is-open');
                         sp_btn.classList.remove('is-active');
+                        document.body.classList.remove('no-scroll');
                     });
                 });
                 // topボタン押すとページ時最上部にスクロール
