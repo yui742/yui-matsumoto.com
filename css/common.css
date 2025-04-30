@@ -125,15 +125,15 @@ header {
     display: block;
 }
 
-.header__nav__item--about img {
+.nav__item--about img {
     width: 66px;
 }
 
-.header__nav__item--works img {
+.nav__item--works img {
     width: 72px;
 }
 
-.header__nav__item--contact img {
+.nav__item--contact img {
     width: 89px;
     quotes: inherit;
 }
@@ -376,19 +376,6 @@ footer {
 
 .hover-fade:hover {
     opacity: 0.7; /* 透明度を少し下げて色を薄く */
-}
-
-.footer__nav__item--about img {
-    width: 66px;
-}
-
-.footer__nav__item--works img {
-    width: 72px;
-}
-
-.footer__nav__item--contact img {
-    width: 89px;
-    quotes: inherit;
 }
 
 .footer__copy {
