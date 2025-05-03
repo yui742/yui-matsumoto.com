@@ -63,37 +63,12 @@
     margin-bottom: 13%;
 }
 
-.about__btn-link {
-    display: flex;
-    align-items: center; /* 垂直方向の中央揃え */
-    justify-content: center; /* 水平方向の中央揃え */
-    position: relative;
-    width: clamp(150px, 17vw, 224px);
-    height: clamp(40px, 5vw, 60px);
+/* read_moerボタン */
+.about__container .btn {
     margin: 0 auto;
-    border: none;
-    border-radius: 9999px;
-    background: #f66159;
-    transition: filter 0.5s ease; /* スムーズな変化 */
 }
 
-.about__btn-link:hover {
-    filter: brightness(1.2) saturate(1.7); /* 明度を上げる */
-}
-
-.about__btn-link::before {
-    position: absolute;
-    top: 43%;
-    right: 30px;
-    width: 6px;
-    height: 10px;
-    background-image: url(../images/icon_arrow_right.svg);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    content: "";
-}
-
-.about__btn-link img {
+.about__container .btn img {
     display: block;
     width: 45%;
     margin: 0 auto;
@@ -328,24 +303,11 @@ textarea {
     line-height: 1.7;
 }
 
-.contact__btn-link {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: clamp(150px, 17vw, 224px);
-    height: clamp(40px, 5vw, 60px);
+.contact__form .btn {
     margin: 0 auto;
-    border-radius: 9999px;
-    border: none;
-    background: #f66159;
-    transition: filter 0.5s ease; /* スムーズな変化 */
 }
 
-.contact__btn-link:hover {
-    filter: brightness(1.2) saturate(1.7); /* 明度を上げる */
-}
-
-.contact__btn-link img {
+.contact__form .btn img {
     width: 43%;
 }
 
@@ -514,12 +476,8 @@ textarea {
         margin-bottom: 17%;
     }
 
-    .about__btn-link {
-        width: 42.0366vw;
-        height: 13.4vw;
-    }
-
-    .about__btn-link img {
+    /* read_moreボタン */
+    .btn img {
         width: 47%;
     }
 
@@ -811,11 +769,6 @@ textarea {
     .contact__notice {
         margin-bottom: 26%;
         font-size: min(1.8252vw, 14px);
-    }
-
-    .contact__btn-link {
-        width: 42.0366vw;
-        height: 13.4vw;
     }
 
     /* 背景シェイプ */

@@ -76,19 +76,50 @@ html {
     font-size: 62.5%;
 }
 
+/* Common Elements（共通スタイル） */
+/* インデント */
 .indent {
     padding-left: 1em;
 }
 
-.inner {
-    max-width: 1366px;
-    margin: 0 auto;
+/* ボタン */
+.btn {
+    display: flex;
+    align-items: center; /* 垂直方向の中央揃え */
+    justify-content: center; /* 水平方向の中央揃え */
+    position: relative;
+    width: clamp(150px, 17vw, 224px);
+    height: clamp(40px, 5vw, 60px);
+    border: none;
+    border-radius: 9999px;
+    background: #f66159;
+    transition: filter 0.5s ease; /* スムーズな変化 */
+}
+.btn:hover {
+    filter: brightness(1.2) saturate(1.7); /* 明度を上げる */
+}
+
+.btn::before {
+    position: absolute;
+    top: 43%;
+    right: 30px;
+    width: 6px;
+    height: 10px;
+    background-image: url(../images/icon_arrow_right.svg);
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+    content: "";
 }
 
 /* クラスにshape付くもの共通 */
 .shape {
     position: absolute;
     z-index: -1;
+}
+
+.inner {
+    max-width: 1366px;
+    margin: 0 auto;
 }
 
 /* ヘッダー */
@@ -303,44 +334,16 @@ footer {
     margin: 0 10%;
 }
 
-.footer__btn {
+/* ボタン */
+.footer .btn {
     margin-bottom: 7%;
 }
 
-.footer__btn-link {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    width: clamp(150px, 17vw, 224px);
-    height: clamp(40px, 5vw, 60px);
-    border: none;
-    border-radius: 30px;
-    background: #f66159;
-    text-align: center;
-    transition: filter 0.5s ease; /* スムーズな変化 */
-}
-
-.footer__btn-link:hover {
-    filter: brightness(1.2) saturate(1.7); /* 明度を上げる */
-}
-
-.footer__btn-link::before {
-    position: absolute;
-    top: 41%;
-    left: 3.6vw;
-    width: 6px;
-    height: 10px;
-    background-image: url(../images/icon_arrow_left.svg);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
-    content: "";
-}
-
-.footer__btn-link img {
+.footer .btn img {
     width: 56%;
 }
 
+/* シェイプエリア */
 .footer__shape-area {
     display: flex;
     justify-content: flex-end;
@@ -353,11 +356,13 @@ footer {
     bottom: 0px;
 }
 
+/* 背景シェイプ */
 .footer__shape--bg-02 {
     width: 71%;
     bottom: 0px;
 }
 
+/* フッターナビゲーション */
 .footer__nav {
     margin-bottom: 6%;
     text-align: center;
@@ -378,6 +383,7 @@ footer {
     opacity: 0.7; /* 透明度を少し下げて色を薄く */
 }
 
+/* フッターコピー */
 .footer__copy {
     margin-bottom: 13px;
     text-align: center;
@@ -442,6 +448,14 @@ footer {
 }
 
 @media screen and (max-width: 767px) {
+    /* Common Elements（共通スタイル） */
+    /* ボタン */
+    .btn {
+        width: 42.13333vw;
+        height: 13.33333vw;
+        border-radius: 13.33333vw;
+    }
+
     /* ハンバーガーメニュー */
     .sp_btn {
         --opacity: 1;
@@ -694,43 +708,28 @@ footer {
         padding-top: min(43%, 327px);
     }
 
-    .footer__btn {
+    /* back_to_pageボタン */
+    .footer .btn {
         margin-bottom: 12%;
     }
 
-    .footer__btn-link {
-        width: 42.13333vw;
-        height: 13.33333vw;
-        border-radius: 13.33333vw;
-    }
-
-    .footer__btn-link img {
+    .footer .btn img {
         width: 61%;
     }
 
-    .footer__btn-link::before {
+    .footer .btn::before {
         top: 39%;
         width: 1.5645vw;
         height: 2.6075vh;
     }
 
+    /* footerナビゲーション */
     .footer__nav {
         width: 67%;
         margin: 0 auto 9% auto;
     }
 
-    .footer__nav__item--about img {
-        width: 86px;
-    }
-
-    .footer__nav__item--works img {
-        width: 94px;
-    }
-
-    .footer__nav__item--contact img {
-        width: 116px;
-    }
-
+    /* footerコピー */
     .footer__copy {
         margin: 0 auto;
         padding-bottom: 2%;
