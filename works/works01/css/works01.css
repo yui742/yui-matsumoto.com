@@ -180,7 +180,7 @@
     }
 
     /* 黄色のシェイプ */
-    .work-detail__wrapper .shape--left-yellow-02-sp {
+    .work-detail .shape--left-yellow-02-sp {
         display: inline;
         top: 56%;
         left: 71%;
@@ -196,12 +196,12 @@
     }
 
     /* デザインカンプ */
-    .design-comp__wrapper {
+    .design-comp {
         margin-top: 18%;
     }
 
     /* 黄色のシェイプ */
-    .design-comp__wrapper .shape--left-yellow-02 {
+    .design-comp .shape--left-yellow-02 {
         top: 12%;
         right: 8%;
         width: 16%;
