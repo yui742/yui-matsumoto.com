@@ -74,9 +74,9 @@
         display: none;
     }
 
-    .shape--small-red-02 {
+    /* .shape--small-red-02 {
         display: none;
-    }
+    } */
 
     /* worksセクション */
     .shape--small-light-orange-02 {
@@ -132,12 +132,12 @@
         width: 19%;
     }
 
-    .shape--small-red-02 {
-        /* top: 88%; */
+    /* .shape--small-red-02 {
+        top: 88%;
         top: 139%;
         left: 7%;
         width: 5%;
-    }
+    } */
 
     .shape--red-yellow-01 {
         display: none;

@@ -270,22 +270,15 @@
 
     /* 赤色のシェイプ */
     .shape--small-red-01-top {
-        top: 4%;
+        top: 15%;
         left: 7%;
         width: 5%;
     }
 
     /* 黄色のシェイプ */
     .shape--left-yellow-05-top {
-        top: 25%;
+        top: 29%;
         right: 8%;
-        width: 19%;
-    }
-
-    /* オレンジと黄色のシェイプ */
-    .shape-ーorange-yellowー01 {
-        top: 12%;
-        left: 5%;
         width: 19%;
     }
 
@@ -351,7 +344,7 @@
     /* オレンジと黄色のシェイプ */
     .shape--orange-yellow-01 {
         top: 50%;
-        left: 3%;
+        left: 5%;
         width: 19%;
     }
 
