@@ -53,6 +53,7 @@
     width: 45%;
     margin: 0 auto;
     text-align: center;
+    transform: translateX(-2%); /* 少しだけ左にずらす */
 }
 
 .about__description {
@@ -468,6 +469,7 @@ textarea {
 
     .about__container {
         width: 63%;
+        transform: none;
     }
 
     .about__description {
