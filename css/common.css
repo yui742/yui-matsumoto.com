@@ -371,7 +371,7 @@ footer {
 .footer__nav ul {
     display: flex;
     justify-content: center;
-    gap: 6.527vw;
+    gap: 3.8799vw;
 }
 
 /* ホバー時ナビゲーションボタンの明度が低くなる */
@@ -727,6 +727,10 @@ footer {
     .footer__nav {
         width: 67%;
         margin: 0 auto 9% auto;
+    }
+
+    .footer__nav ul {
+        gap: 6.527vw;
     }
 
     /* footerコピー */
