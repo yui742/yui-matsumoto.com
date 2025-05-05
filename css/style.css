@@ -186,7 +186,7 @@
 .skill__tools--small p.skill__tool {
     width: 7.3em;
     height: 2.6em;
-    border-radius: 5px;
+    border-radius: 0.366vw;
     background-color: #f3e9cf;
     font-size: min(1.3177vw, 18px);
     display: flex;
