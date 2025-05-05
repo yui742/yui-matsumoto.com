@@ -622,6 +622,7 @@ textarea {
     .skill__tools--small p.skill__tool {
         width: 7.2em;
         height: 2.6em;
+        border-radius: 0.6527vw;
         font-size: min(2.3468vw, 18px);
     }
 
