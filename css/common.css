@@ -374,6 +374,18 @@ footer {
     gap: 3.8799vw;
 }
 
+.footer__nav .nav__item--about img {
+    width: clamp(30px, 4.8316vw, 66px);
+}
+
+.footer__nav .nav__item--works img {
+    width: clamp(30px, 5.2708vw, 72px);
+}
+
+.footer__nav .nav__item--contact img {
+    width: clamp(30px, 6.5153vw, 89px);
+}
+
 /* ホバー時ナビゲーションボタンの明度が低くなる */
 .hover-fade {
     transition: opacity 0.3s ease; /* 変化をスムーズに */
@@ -390,7 +402,7 @@ footer {
 }
 
 .footer__copy img {
-    width: 209px;
+    width: clamp(30px, 14.6vw, 206px);
 }
 
 /* top */
@@ -733,6 +745,18 @@ footer {
         gap: 6.527vw;
     }
 
+    .footer__nav .nav__item--about img {
+        width: 11.357vw;
+    }
+
+    .footer__nav .nav__item--works img {
+        width: 12.6657vw;
+    }
+
+    .footer__nav .nav__item--contact img {
+        width: 14.5326vw;
+    }
+
     /* footerコピー */
     .footer__copy {
         margin: 0 auto;
@@ -740,7 +764,7 @@ footer {
     }
 
     .footer__copy img {
-        width: 33%;
+        width: 26.7vw;
     }
 
     /* 背景シェイプ */
