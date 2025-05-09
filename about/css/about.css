@@ -461,11 +461,11 @@
         left: 7%;
         width: 80%;
         min-height: 701px;
-        margin-bottom: 11%;
+        margin-bottom: 13%;
     }
 
     .strange__text-01 {
-        top: 34%;
+        top: 37%;
         left: 28%;
         width: 74%;
     }
@@ -475,7 +475,7 @@
         top: 45%;
         left: 50%;
         min-height: 701px;
-        margin-bottom: 10%;
+        margin-bottom: 13%;
     }
 
     .strange__text-02 {
@@ -488,7 +488,8 @@
     .strange__item-03 {
         left: 8%;
         width: 80%;
-        min-height: 701px;
+        min-height: 782px;
+        margin-bottom: 0;
     }
 
     .strange__text-03 {
@@ -512,132 +513,140 @@
 @media screen and (max-width: 680px) {
     /* strangeセクション3つの強みの高さをデバイス幅に合わせて調整 */
     .strange__item-01 {
-        min-height: 638px;
+        min-height: 651px;
     }
 
     .strange__text-01 {
-        top: 33%;
+        top: 36%;
     }
 
     .strange__item-02 {
-        min-height: 606px;
+        min-height: 604px;
+    }
+
+    .strange__text-02 {
+        top: 38%;
     }
 
     .strange__item-03 {
-        min-height: 700px;
+        min-height: 695px;
     }
 
     .strange__text-03 {
-        top: 30%;
+        top: 34%;
     }
 }
 
 @media screen and (max-width: 600px) {
     /* strangeセクション3つの強みの高さをデバイス幅に合わせて調整 */
     .strange__item-01 {
-        min-height: 566px;
+        min-height: 575px;
     }
 
     .strange__text-01 {
-        top: 32%;
+        top: 36%;
     }
 
     .strange__item-02 {
-        min-height: 533px;
+        min-height: 534px;
     }
 
     .strange__item-03 {
-        min-height: 620px;
+        min-height: 613px;
     }
 
     .strange__text-03 {
-        top: 29%;
+        top: 34%;
     }
 }
 
 @media screen and (max-width: 550px) {
     /* strangeセクション3つの強みの高さをデバイス幅に合わせて調整 */
     .strange__item-01 {
-        min-height: 520px;
+        min-height: 527px;
     }
 
     .strange__item-02 {
-        min-height: 491px;
+        min-height: 489px;
     }
 
     .strange__item-03 {
-        min-height: 571px;
+        min-height: 562px;
+    }
+
+    .strange__text-03 {
+        top: 34%;
     }
 }
 
 @media screen and (max-width: 500px) {
     /* strangeセクション3つの強みの高さをデバイス幅に合わせて調整 */
     .strange__item-01 {
-        min-height: 461px;
+        min-height: 478px;
     }
 
     .strange__item-02 {
-        min-height: 449px;
+        min-height: 445px;
     }
 
     .strange__item-03 {
-        min-height: 484px;
+        min-height: 510px;
     }
 }
 
 @media screen and (max-width: 450px) {
     /* strangeセクション3つの強みの高さをデバイス幅に合わせて調整 */
     .strange__item-01 {
-        min-height: 417px;
+        min-height: 430px;
     }
 
     .strange__item-02 {
-        min-height: 405px;
+        min-height: 400px;
     }
 
     .strange__item-03 {
-        min-height: 438px;
+        min-height: 459px;
     }
 }
 
 @media screen and (max-width: 400px) {
     /* strangeセクション3つの強みの高さをデバイス幅に合わせて調整 */
     .strange__item-01 {
-        min-height: 373px;
+        min-height: 382px;
     }
 
     .strange__text-01 {
-        top: 31%;
+        top: 36%;
     }
 
     .strange__item-02 {
-        min-height: 363px;
+        min-height: 357px;
     }
 
     .strange__item-03 {
-        min-height: 392px;
+        min-height: 408px;
     }
 }
 
 @media screen and (max-width: 360px) {
     /* strangeセクション3つの強みの高さをデバイス幅に合わせて調整 */
     .strange__item-01 {
-        min-height: 319px;
+        min-height: 335px;
     }
 
     .strange__text-01 {
-        top: 35%;
+        top: 36%;
     }
 
     .strange__item-02 {
-        min-height: 314px;
+        min-height: 311px;
     }
 
     .strange__item-03 {
-        min-height: 341px;
+        min-height: 357px;
     }
 
     .strange__text-03 {
-        top: 33%;
+        top: 34%;
     }
 }
