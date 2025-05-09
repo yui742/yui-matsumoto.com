@@ -75,6 +75,16 @@
     margin: 0 auto;
 }
 
+/* aboutセクション：矢印右、hoverで右へスライド */
+.about__container .btn::after {
+    right: 1.5vw;
+    left: auto;
+}
+
+.about__container .btn:hover::after {
+    transform: translateX(2px);
+}
+
 /* skillセクション */
 .skill {
     max-width: 1366px;
@@ -310,6 +320,11 @@ textarea {
 
 .contact__form .btn img {
     width: 43%;
+}
+
+/* contactセクション：矢印非表示 */
+.contact__form .btn::after {
+    content: none;
 }
 
 @media screen and (min-width: 767px) {

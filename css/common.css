@@ -99,16 +99,19 @@ html {
     filter: brightness(1.2) saturate(1.7); /* 明度を上げる */
 }
 
-.btn::before {
+/* 右矢印 */
+.btn::after {
     position: absolute;
-    top: 43%;
-    right: 30px;
-    width: 6px;
-    height: 10px;
-    background-image: url(../images/icon_arrow_right.svg);
-    background-size: 100% auto;
-    background-repeat: no-repeat;
+    top: 0;
+    right: 1.53333vw;
+    bottom: 0;
+    width: 0.9vw;
+    height: 0.8vw;
+    margin: auto;
+    background: url(/images/icon-arrow-right.svg) no-repeat;
+    background-size: contain;
     content: "";
+    transition: transform 0.3s ease; /* ← 追加：アニメーション設定 */
 }
 
 /* クラスにshape付くもの共通 */
@@ -343,6 +346,15 @@ footer {
     width: 56%;
 }
 
+/* footerセクション：矢印左、hoverで左へスライド */
+.footer .btn::after {
+    left: 1.5vw;
+    right: auto;
+    background: url(/images/icon-arrow-left.svg) no-repeat;
+}
+.footer .btn:hover::after {
+    transform: translateX(-2px); /* ← 左にスライド */
+}
 /* シェイプエリア */
 .footer__shape-area {
     display: flex;
@@ -466,6 +478,12 @@ footer {
         width: 42.13333vw;
         height: 13.33333vw;
         border-radius: 13.33333vw;
+    }
+
+    .btn:after {
+        right: 3.6vw;
+        width: 2.88vw;
+        height: 2.56vw;
     }
 
     /* ハンバーガーメニュー */
