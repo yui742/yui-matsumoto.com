@@ -76,11 +76,6 @@
 }
 
 /* aboutセクション：矢印右、hoverで右へスライド */
-.about__container .btn::after {
-    right: 1.5vw;
-    left: auto;
-}
-
 .about__container .btn:hover::after {
     transform: translateX(2px);
 }
